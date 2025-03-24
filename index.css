@@ -1,0 +1,48 @@
+/* vivew point units  */
+/* overflow scroll  */
+
+/* create a global varible */
+:root{
+	
+	--matt-black: #171717;
+	---black: #000000;
+	---white: #ffffff;
+
+
+
+}
+
+/* giv big left div space */
+.bigleftdiv {
+	
+	height: 100vh;
+	width: 30%;
+	float: left;
+	overflow: scroll;
+	background-color: var(--matt-black);
+	
+	color: brown;
+}
+/* for the containers LATER */
+/* {
+
+	border-radius: 4%;
+} */
+.bigrightdiv {
+	
+	height: 100vh;
+	
+
+	overflow: scroll;
+	/* border-radius: 4%; */
+	color: brown;
+	background-color: var(---black);
+}
+
+
+
+ /* see if overflow is working */
+
+p {
+	color: var(---white);
+}
