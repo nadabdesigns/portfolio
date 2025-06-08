@@ -2,36 +2,121 @@
 /* overflow scroll  */
 
 /* create a global varible */
-:root{
-	
+:root {
+
 	--matt-black: #171717;
 	---black: #000000;
 	---white: #ffffff;
+	--type: "helvetica-neue-lt-pro", sans-serif;
+
+
 
 
 
 }
 
+/* body {
+	display: flex;
+	flex-direction: row;
+} */
+
+#nav {
+	background-color: var(---black);
+	height: 200px;
+	width: 25px;
+	position: absolute;
+	top: 40vh;
+	display: flex;
+	justify-content: end;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	right: 30px;
+
+}
+
+.dot {
+	background-color: rgb(85, 85, 85);
+	height: 10px;
+	width: 10px;
+	border-radius: 10px;
+
+}
+
+.textTitle {
+	position: relative;
+	top: 40px;
+	left: 20px;
+	mix-blend-mode: difference;
+	color: var(---white);
+	color: var(---white);
+	font-family: "helvetica-neue-lt-pro", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+	backdrop-filter: blur(10px);
+	width: 300px;
+
+
+}
+
+
+
 /* giv big left div space */
 .bigleftdiv {
-	
+
 	height: 100vh;
 	width: 30%;
 	float: left;
 	overflow: scroll;
 	background-color: var(--matt-black);
-	
-	color: brown;
+	padding: 16px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/* overflow-x: hidden;
+    overflow-y: auto; */
+	overflow: hidden;
+	overflow-y: scroll;
+
 }
+.visualGrid {
+	display: flex;
+	align-items: flex-start;
+	column-gap: 20px;
+}
+
+.col1, .col2{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+/* #superdiv {
+	width: 100px;
+	height: 300px;
+	background-color: aqua;
+} */
+
+
 /* for the containers LATER */
 /* {
 
 	border-radius: 4%;
 } */
 .bigrightdiv {
-	
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 8px;
+
 	height: 100vh;
-	
+	padding: 10px;
+
 
 	overflow: scroll;
 	/* border-radius: 4%; */
@@ -39,10 +124,82 @@
 	background-color: var(---black);
 }
 
+img {
+	height: 100%;
+	width: 100%;
+
+}
 
 
- /* see if overflow is working */
+
+/* see if overflow is working */
+h1 {
+	/* text-decoration-line: underline; */
+	color: var(---white);
+	font-family: "helvetica-neue-lt-pro", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 40px;
+	text-transform: uppercase;
+	padding-bottom: 30px;
+}
+
+.subDiv {
+	border-top-style: solid;
+	border-top-color: var(---white);
+	border-top-width: 4px;
+}
+
+h2 {
+	/* text-decoration-line: underline; */
+	color: var(---white);
+	font-family: "helvetica-neue-lt-pro", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	text-transform: uppercase;
+	border-bottom: 1px solid white;
+	padding-top: 4px;
+	
+
+}
+
 
 p {
 	color: var(---white);
+	font-family: "helvetica-neue-lt-pro", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	
 }
+
+@media screen and (max-width: 1050px) {
+	body {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.bigleftdiv {
+		width: 100%;
+		height: 40vh;
+	}
+
+	#nav {
+		position: absolute;
+		top: 50vh;
+	}
+}
+
+/* less than 600px */
+@media screen and (max-width: 600px) {}
+
+/* SCREEN IS SMALLER THAN 530 PX */
+@media screen and (max-width: 530px) {}
+
+/* SCREEN IS SMALLER THATN 400 PX */
+
+@media screen and (max-width: 400px) {}
+
+/* WHEN SCREEN IS SMALLER THAN 350 PX */
+@media screen and (max-width: 350px) {}
