@@ -133,9 +133,9 @@
 	background-color: var(---black);
 }
 
-img {
-	height: 100%;
-	width: 100%;
+.containerImage img {
+	max-height: 100%;
+	object-fit: cover;
 
 }
 
