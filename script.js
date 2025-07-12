@@ -1,3 +1,8 @@
+// Dots scroll here
+
+
+
+
 // tracking a div on top of the mouse
 // event liser is appoy to the whole document
 // and in that case if the event lisener is ture run the following

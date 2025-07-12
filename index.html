@@ -9,6 +9,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="index.css">
 	<link rel="stylesheet" href="https://use.typekit.net/dnc4aus.css">
+	
 
 
 
@@ -23,12 +24,19 @@
 
 
 	<div class="bigleftdiv">
-		<p>Brooklyn-based designer shaping experiences at the intersection of retail, social impact, culture,
-			healthcare, and technology. Design exists at the convergence of empathy and impact, applied through a
-			multidisciplinary approach.
-			<br>nadabdesigns@gmail.com
-			<br>CV</br>
-		</p>
+		<div id="BioDiv">
+			<p>Brooklyn-based designer shaping experiences at the intersection of retail, social impact, culture,
+				healthcare, and technology. Design exists at the convergence of empathy and impact, applied through a
+				multidisciplinary approach.
+
+			</p>
+			<div id="resumeDiv">
+				<em>
+					<br>nadabdesigns@gmail.com
+
+					<br>CV</br></em>
+			</div>
+		</div>
 
 
 		<div class="subDiv">
@@ -100,23 +108,23 @@
 		<!-- ./ is a short cut for files -->
 		<!-- command click links to see if they lead to the right thing -->
 		<div id="rightNav">
-			<div class="dot"></div>
-			<div class="dot"></div>
-			<div class="dot"></div>
-			<div class="dot"></div>
-			<div class="dot"></div>
-			<div class="dot"></div>
-			<div class="dot"></div>
+			<div id="dot"></div>
+			<div id="dot"></div>
+			<div id="dot"></div>
+			<div id="dot"></div>
+			<div id="dot"></div>
+			<div id="dot"></div>
+			<div id="dot"></div>
 		</div>
 		<div class="containerImage">
 			<picture>
 				<source media="(max-width: 480px)" srcset="./Home_Page_Media/Free_M_Mockups_iMac_24_Inch.jpg">
 				<source media="(max-width: 640px)" srcset="	./Home_Page_Media/Free_M_Mockups_iMac_24_Inch.jpg">
 				<img alt="Tim Berners-Lee at a computer." src="./Home_Page_Media/Free_M_Mockups_iMac_24_Inch.jpg">
-			
+
 				<!-- <div class="textTitle"> in all this</div> -->
 			</picture>
-		
+
 		</div>
 		<div class="containerImage">
 			<a href=""><img src="./Home_Page_Media/04_mockup.jpg"></a>
@@ -143,6 +151,10 @@
 	</div>
 
 </body>
-<script src="JavaScript.js"></script>
+<script src="script.js">
+	window.addEventListener('scroll', () => {
+	console.log('scrolled');
+  });
+</script>
 
 </html>

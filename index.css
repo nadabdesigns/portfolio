@@ -20,6 +20,12 @@
 	flex-direction: row;
 } */
 .desktopnav {
+	padding-left: 30%;
+	font-family: var(--type);
+	color: var(---white);
+	background-color: var(---black);
+	height: 3vh;
+
 	/* ADD IN LATER */
 }
 
@@ -46,12 +52,18 @@
 
 }
 
-.dot {
+#dot {
 	background-color: rgb(85, 85, 85);
 	height: 10px;
 	width: 10px;
 	border-radius: 10px;
 
+}
+#dotScroll{
+	background-color: rgb(255, 255, 255);
+	height: 10px;
+	width: 10px;
+	border-radius: 10px;
 }
 
 .textTitle {
@@ -76,7 +88,7 @@
 /* giv big left div space */
 .bigleftdiv {
 
-	height: 100vh;
+	height: 97vh;
 	width: 30%;
 	float: left;
 	overflow: scroll;
@@ -91,6 +103,23 @@
 	overflow: hidden;
 	overflow-y: scroll;
 
+}
+#bioDiv {
+    height: 40px;
+}
+
+em {
+
+	
+	color: var(---white);
+	font-family: "helvetica-neue-lt-pro", sans-serif;
+	background-color: var(---black);
+
+
+}
+
+#resumeDiv{
+	background: black;
 }
 
 .visualGrid {
@@ -123,8 +152,11 @@
 	grid-template-columns: 1fr;
 	gap: 8px;
 
-	height: 100vh;
-	padding: 10px;
+	padding: 0px 10px 0px 10px;
+
+
+	height: 97vh;
+	/* padding: 10px; */
 
 
 	overflow: scroll;
