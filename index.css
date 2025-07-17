@@ -33,9 +33,9 @@
 	display: none;
 }
 
-#mobileDropdown {
+/* #mobileDropdown {
 	display: none;
-}
+} */
 .none{
 	display: none;
 }
@@ -259,23 +259,25 @@ p {
 	}
 
 	#mobileDropdown {
-		display: block;
+		/* display: block; */
 		/* background-color: var(--matt-black);
-		width: 100%;
-		height: 100vh; */
+		 */
 	}
 	.style1{
+		display: none;
+	
+		
+		
+
+	}
+	.style2{
 		display: block;
 		background-color: var(--matt-black);
 		width: 100%;
 		height: 100vh;
 
 	}
-	.style2{
-		background-color: azure;
-		
-
-	}
+	
 
 	.bigleftdiv {
 		display: none;
