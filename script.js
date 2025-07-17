@@ -1,3 +1,18 @@
+
+// mobile here
+// Set up our variables.
+let classChange = 'highlight';
+let dropDown = document.querySelector('section')
+let switchButton = document.querySelector('#example')
+
+
+// change.classList.add('class-name','one','two')
+// change.classList.remove('rest','one')
+// change.classList.toggle('rest')
+
+
+
+
 // Dots scroll here
 
 

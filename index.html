@@ -9,7 +9,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="index.css">
 	<link rel="stylesheet" href="https://use.typekit.net/dnc4aus.css">
-	
+
 
 
 
@@ -20,7 +20,11 @@
 <body>
 
 	<nav class="desktopnav">⇅ All Projects</nav>
-	<nav class="mobilenav"> <p>⇅ All Projects </p><img src="./Home_Page_Media/Hamburger.svg" id="hamburger"> </nav>
+	<nav class="mobilenav">
+		<p>⇅ All Projects </p><img src="./Home_Page_Media/Hamburger.svg" id="hamburger">
+	</nav>
+
+
 
 
 	<div class="bigleftdiv">
@@ -73,6 +77,7 @@
 
 			</div>
 		</div>
+
 		<div class="subDiv">
 			<h1> Visual Diary </h1>
 
@@ -101,6 +106,30 @@
 
 
 
+	</div>
+	<div class="style1" id="mobileDropdown">
+
+		<h1> Visual Diary </h1>
+
+		
+					<h2>cultural nomad</h2>
+					<h2>scans</h2>
+
+				
+					<h2>The Self Sufficient Selfie</h2>
+
+					<h2>Photography</h2>
+					<script>
+						let myElement = document.getElementById("hamburger");
+						let myMobile = document.getElementById("mobileDropdown");
+						myElement.addEventListener("click",()=>{
+							myMobile.classList.toggle("style2");
+							
+						})
+
+					</script>
+				
+		
 	</div>
 	<div class="bigrightdiv">
 
@@ -151,10 +180,10 @@
 	</div>
 
 </body>
-<script src="script.js">
+<script defer src="script.js">
 	window.addEventListener('scroll', () => {
-	console.log('scrolled');
-  });
+		console.log('scrolled');
+	});
 </script>
 
 </html>
