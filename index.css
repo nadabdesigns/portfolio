@@ -11,7 +11,8 @@
 
 
 }
-html{
+
+html {
 	/* background-color: var(---black); */
 }
 
@@ -35,7 +36,7 @@ html{
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
-	padding: 0px, 0px, 0px,0px;
+	padding: 0px, 0px, 0px, 0px;
 
 }
 
@@ -86,6 +87,10 @@ html{
 }
 
 .textTitle {
+	display: flex;
+	flex-direction: row-reverse;
+	text-align: right;
+
 	position: relative;
 	height: 0px;
 	top: 15px;
@@ -187,7 +192,7 @@ em {
 	color: brown;
 	background-color: var(---black);
 
-	
+
 }
 
 .containerImage img {
@@ -202,20 +207,20 @@ em {
 /* see if overflow is working */
 h1 {
 	/* text-decoration-line: underline; */
-	
+
 	color: var(---white);
 	font-family: "helvetica-neue-lt-pro", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	font-size: 40px;
 	text-transform: uppercase;
-	padding-bottom: 30px;
+	padding-bottom: 15px;
 }
 
 .subDiv {
 	border-top-style: solid;
 	border-top-color: var(---white);
-	border-top-width: 4px;
+	/* border-top-width: 4px; */
 }
 
 h2 {
@@ -231,9 +236,10 @@ h2 {
 
 
 }
-h3{
+
+h3 {
 	font-family: "helvetica-neue-lt-pro", sans-serif;
-    color: white;
+	color: white;
 	padding-bottom: 10px;
 }
 
@@ -247,10 +253,19 @@ p {
 	font-size: 14px;
 
 }
-#BioParagraph{
+#allPro{
+	display: flex
+	;
+		flex-direction: row;
+		align-content: space-around;
+		flex-wrap: wrap;
+}
+
+#BioParagraph {
 	padding-bottom: 10px;
 }
-.blackDiv{
+
+.blackDiv {
 	background-color: var(---black);
 	padding: 16px;
 }
@@ -270,9 +285,10 @@ p {
 		position: absolute;
 		top: 50vh;
 	}
-	h1{
-		padding-bottom: 30px;
-    padding-top: 30px;
+
+	h1 {
+		/* padding-bottom: 30px; */
+		padding-top: 30px;
 	}
 }
 
@@ -294,7 +310,7 @@ p {
 	}
 
 	#mobileDropdown {
-		
+
 		position: absolute;
 		z-index: 10;
 		height: calc(100vh - 30px);
