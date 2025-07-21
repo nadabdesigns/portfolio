@@ -88,8 +88,8 @@ html {
 
 .textTitle {
 	display: flex;
-	flex-direction: row-reverse;
-	text-align: right;
+	flex-direction: column;
+	/* text-align: right; */
 
 	position: relative;
 	height: 0px;
