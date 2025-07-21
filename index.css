@@ -29,6 +29,7 @@ html{
 	color: var(---white);
 	background-color: var(---black);
 	height: 3vh;
+	display: flex;
 
 	/* ADD IN LATER */
 }
@@ -227,6 +228,12 @@ h2 {
 
 
 }
+h3{
+	font-family: "helvetica-neue-lt-pro", sans-serif;
+    color: white;
+	padding-bottom: 10px;
+}
+
 
 
 p {
@@ -236,6 +243,13 @@ p {
 	font-style: normal;
 	font-size: 14px;
 
+}
+#BioParagraph{
+	padding-bottom: 10px;
+}
+.blackDiv{
+	background-color: var(---black);
+	padding: 16px;
 }
 
 @media screen and (max-width: 1050px) {
