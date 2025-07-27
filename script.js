@@ -1,4 +1,7 @@
 
+
+
+
 // mobile here
 // Set up our variables.
 let classChange = 'highlight';
@@ -14,6 +17,14 @@ let switchButton = document.querySelector('#example')
 
 
 // Dots scroll here
+
+// figure out how to click one 
+// change it to white 
+// scroll dow
+// get rid of the other
+// the fist thing is if and the second thing is elese if
+document.getElementById("dot").scrollIntoView();
+
 
 
 
