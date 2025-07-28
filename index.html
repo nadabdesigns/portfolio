@@ -45,10 +45,10 @@
 					<div>
 						<h2>Spot</h2>
 					</div>
-					
+
 					<div>
 						<h2>Burn Out</h2>
-						
+
 					</div>
 				</div>
 
@@ -64,30 +64,30 @@
 				<h2>Photography</h2>
 				<script>
 					document.addEventListener("DOMContentLoaded", () => {
-					  const button = document.querySelector(".h2");
-					  const highlight = document.getElementById("h2Change");
-					  const hamburger = document.getElementById("hamburger");
-					  const mobileDropdown = document.getElementById("mobileDropdown");
-					
-					  if (button) {
-						button.addEventListener('mouseover', () => {
-						  if (mobileDropdown.classList.contains("style2")) {
-							highlight.style.color = "red"; // example action
-						  }
-						});
-					  }
-					
-					  hamburger.addEventListener("click", () => {
-						if (!mobileDropdown.classList.contains("style2")) {
-						  mobileDropdown.classList.remove("style1");
-						  mobileDropdown.classList.add("style2");
-						} else {
-						  mobileDropdown.classList.remove("style2");
-						  mobileDropdown.classList.add("style1");
+						const button = document.querySelector(".h2");
+						const highlight = document.getElementById("h2Change");
+						const hamburger = document.getElementById("hamburger");
+						const mobileDropdown = document.getElementById("mobileDropdown");
+
+						if (button) {
+							button.addEventListener('mouseover', () => {
+								if (mobileDropdown.classList.contains("style2")) {
+									highlight.style.color = "red"; // example action
+								}
+							});
 						}
-					  });
+
+						hamburger.addEventListener("click", () => {
+							if (!mobileDropdown.classList.contains("style2")) {
+								mobileDropdown.classList.remove("style1");
+								mobileDropdown.classList.add("style2");
+							} else {
+								mobileDropdown.classList.remove("style2");
+								mobileDropdown.classList.add("style1");
+							}
+						});
 					});
-					</script>
+				</script>
 
 
 			</div>
@@ -122,7 +122,7 @@
 					</div>
 					<div>
 						<h2>Burn Out</h2>
-						
+
 					</div>
 					<div>
 						<h2>Links</h2>
@@ -186,60 +186,82 @@
 		<!-- ./ is a short cut for files -->
 		<!-- command click links to see if they lead to the right thing -->
 		<div id="rightNav">
-			<a href="#typography"><div id="dot"></div></a>
-			<a href="#accountable"><div id="dot"></div></a>
-			<a href="#dyslexia"><div id="dot"></div></a>
-			<a href="#opal"><div id="dot"></div></a>
-			<a href="#spot"><div id="dot"></div></a>
-			<a href="#burn"><div id="dot"></div></a>
-			<a href="#link"><div id="dot"></div></a>
+			<a href="#typography">
+				<div id="dot"></div>
+			</a>
+			<a href="#accountable">
+				<div id="dot"></div>
+			</a>
+			<a href="#dyslexia">
+				<div id="dot"></div>
+			</a>
+			<a href="#opal">
+				<div id="dot"></div>
+			</a>
+			<a href="#spot">
+				<div id="dot"></div>
+			</a>
+			<a href="#burn">
+				<div id="dot"></div>
+			</a>
+			<a href="#link">
+				<div id="dot"></div>
+			</a>
 		</div>
 		<div class="containerImage" id="typography">
 			<picture>
-				<div class="textTitle"> Typography<p> web Design</p></div>
+				<div class="textTitle"> Typography<p> web Design</p>
+				</div>
 				<a href=""><img src="./Home_Page_Media/Free_M_Mockups_iMac_24_Inch.jpg"></a>
-				
 
-				
+
+
 			</picture>
 
 		</div>
 		<div class="containerImage">
-			<div class="textTitle" id="accountable"> Accountable <p>UX/UI</p></div>
+			<div class="textTitle" id="accountable"> Accountable <p>UX/UI</p>
+			</div>
 			<a href=""><img src="./Home_Page_Media/04_mockup.png"></a>
-			<div class="mobileTitle">Accountable <p>UX/UI</p></div>
+			<div class="mobileTitle">Accountable <p>UX/UI</p>
+			</div>
 			<!-- <a href=""><img src="./Home_Page_Media/Dice.png"></a> -->
-			
+
 		</div>
 		<div class="containerImage">
-			<div class="textTitle" id="dyslexia"> Dyslexia Simulation<p>Mobile and Web Design</p></div>
-			
+			<div class="textTitle" id="dyslexia"> Dyslexia Simulation<p>Mobile and Web Design</p>
+			</div>
+
 			<a href=""><img src="./Home_Page_Media/Dyslexia.jpg"></a>
-			
-			
+
+
 		</div>
 		<div class="containerImage" id="opal">
-			<div class="textTitle">Opal<p> Logo Design<br> 3D Animation</p></div>
+			<div class="textTitle">Opal<p> Logo Design<br> 3D Animation</p>
+			</div>
 			<a href=""><img src="./Home_Page_Media/opal.png"></a>
-			
+
 		</div>
 		<div class="containerImage" id="spot">
 			<div class="textTitle"> Spot<p>Brand Identity, Logo Design,
-				and 3D Animation</p></div>
+					and 3D Animation</p>
+			</div>
 			<a href=""><img src="./Home_Page_Media/Spot.jpg"></a>
-			
+
 		</div>
 
 		<div class="containerImage" id="burn">
-			<div class="textTitle"> Burn Out <p>3D,Logo,Brand and Product Design</p></div>
-			
+			<div class="textTitle"> Burn Out <p>3D,Logo,Brand and Product Design</p>
+			</div>
+
 			<a href=""><img src="./Home_Page_Media/Box_3_ vertical.png"></a>
-			
+
 		</div>
 		<div class="containerImage" id="link">
-			<div class="textTitle"> Links <p> Web Design</p></div>
+			<div class="textTitle"> Links <p> Web Design</p>
+			</div>
 			<a href=""><img src="./Home_Page_Media/Typogrphy.png"></a>
-			
+
 		</div>
 
 
