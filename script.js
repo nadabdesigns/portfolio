@@ -23,7 +23,6 @@ let switchButton = document.querySelector('#example')
 // scroll dow
 // get rid of the other
 // the fist thing is if and the second thing is elese if
-document.getElementById("dot").scrollIntoView();
 
 
 
