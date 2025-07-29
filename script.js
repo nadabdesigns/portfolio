@@ -17,6 +17,15 @@ let switchButton = document.querySelector('#example')
 
 
 // Dots scroll here
+const highlightClass = 'highlight';
+const dotSelect = document.querySelector('#dot');
+const switchDot = document.querySelector('#dotScroll');
+
+if (dotSelect && switchDot) {
+    switchDot.addEventListener('click', () => {
+        dotSelect.classList.toggle(highlightClass);
+    });
+}
 
 // figure out how to click one 
 // change it to white 
