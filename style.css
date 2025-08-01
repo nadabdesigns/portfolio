@@ -95,11 +95,27 @@ html {
 
 }
 
-#dot {
+
+.dot {
 	background-color: rgb(85, 85, 85);
 	height: 10px;
 	width: 10px;
 	border-radius: 10px;
+
+}
+.dot:hover {
+	background-color: rgb(255, 255, 255);
+	height: 10px;
+	width: 10px;
+	border-radius: 10px;
+
+}
+.dot:active {
+	background-color: rgb(168, 246, 0);
+	height: 10px;
+	width: 10px;
+	border-radius: 10px;
+	scale: 1.5;
 
 }
 
@@ -109,6 +125,7 @@ html {
 	width: 10px;
 	border-radius: 10px;
 }
+
 
 .highlight {
     background-color: rgb(255, 255, 255);

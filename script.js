@@ -17,15 +17,34 @@ let switchButton = document.querySelector('#example')
 
 
 // Dots scroll here
-const highlightClass = 'highlight';
-const dotSelect = document.querySelector('#dot');
-const switchDot = document.querySelector('#dotScroll');
+console.log("Divs found:", sections.length);
 
-if (dotSelect && switchDot) {
-    switchDot.addEventListener('click', () => {
-        dotSelect.classList.toggle(highlightClass);
-    });
-}
+
+// Select all divs you want to observe (better to use a class)
+const sections = document.querySelectorAll(".scroll-section");
+console.log("Divs found:", sections.length);
+
+const addActiveClass = (entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      console.log("Visible div:", entry.target);
+      entry.target.classList.add("active"); // Example: add a class
+    } else {
+      entry.target.classList.remove("active");
+    }
+  });
+};
+
+const options = {
+  threshold: 0.5
+};
+
+const observer = new IntersectionObserver(addActiveClass, options);
+
+// Attach observer to each div
+sections.forEach(div => observer.observe(div));
+
+
 
 // figure out how to click one 
 // change it to white 
