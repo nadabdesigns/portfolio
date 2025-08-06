@@ -3,24 +3,65 @@
 
 /* create a global varible */
 :root {
-
 	--matt-black: #171717;
 	---black: #000000;
 	---white: #ffffff;
 	--type: "helvetica-neue-lt-pro", sans-serif;
-
-
-
-
-
-}
-
-/* body {
+  }
+  ::-webkit-scrollbar {
+  }
+  ::-webkit-scrollbar-track {
+	background-color: red;
+  }
+  ::-webkit-scrollbar-thumb {
+	width: 100px;
+  
+	background-color: var(---black);
+  }
+  
+  html {
+	/* background-color: var(---black); */
+	scroll-behavior: smooth !important;
+  }
+  
+  /* body {
+	  display: flex;
+	  flex-direction: row;
+  } */
+  .desktopnav {
+	padding-left: calc(30% + 10px);
+	/* padding-left: 30%; */
+	font-family: var(--type);
+	color: var(---white);
+	background-color: var(---black);
+	height: 3vh;
 	display: flex;
-	flex-direction: row;
-} */
-
-#nav {
+  
+	/* ADD IN LATER */
+  }
+  
+  #navShift {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0px, 0px, 0px, 0px;
+  }
+  .mobileTitle {
+	display: none;
+  }
+  
+  .mobilenav {
+	display: none;
+  }
+  
+  /* #mobileDropdown {
+	  display: none;
+  } */
+  .none {
+	display: none;
+  }
+  
+  #rightNav {
 	background-color: var(---black);
 	height: 200px;
 	width: 25px;
@@ -36,21 +77,53 @@
 	padding-top: 15px;
 	padding-bottom: 15px;
 	right: 30px;
-
-}
-
-.dot {
+	z-index: 10;
+  }
+  
+  .dot {
 	background-color: rgb(85, 85, 85);
 	height: 10px;
 	width: 10px;
 	border-radius: 10px;
-
-}
-
-.textTitle {
+  }
+  .dot:hover {
+	background-color: rgb(164, 164, 164);
+	height: 10px;
+	width: 10px;
+	border-radius: 10px;
+  }
+  .active {
+	background-color: rgb(255, 255, 255);
+	scale: 1.5;
+  }
+  .dot:active {
+	background-color: rgb(255, 255, 255);
+	height: 10px;
+	width: 10px;
+	border-radius: 10px;
+	scale: 1.5;
+  }
+  
+  #dotScroll {
+	background-color: rgb(255, 255, 255);
+	height: 10px;
+	width: 10px;
+	border-radius: 10px;
+  }
+  
+  .highlight {
+	background-color: rgb(255, 255, 255);
+  }
+  
+  .textTitle {
+	display: flex;
+	flex-direction: column;
+	/* text-align: right; */
+  
 	position: relative;
-	top: 40px;
-	left: 20px;
+	height: 0px;
+	top: 15px;
+	left: 15px;
 	mix-blend-mode: difference;
 	color: var(---white);
 	color: var(---white);
@@ -59,147 +132,255 @@
 	font-style: normal;
 	font-size: 20px;
 	backdrop-filter: blur(10px);
-	width: 300px;
-
-
-}
-
-
-
-/* giv big left div space */
-.bigleftdiv {
-
-	height: 100vh;
+	width: calc(100% - 40px);
+	text-transform: uppercase;
+  }
+  
+  /* giv big left div space */
+  .bigleftdiv {
+	height: 97vh;
 	width: 30%;
 	float: left;
 	overflow: scroll;
 	background-color: var(--matt-black);
 	padding: 16px;
-
+  
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	/* overflow-x: hidden;
-    overflow-y: auto; */
+	  overflow-y: auto; */
 	overflow: hidden;
 	overflow-y: scroll;
-
-}
-.visualGrid {
+  }
+  
+  #bioDiv {
+	height: 40px;
+  }
+  
+  em {
+	color: var(---white);
+	font-family: "helvetica-neue-lt-pro", sans-serif;
+	background-color: var(---black);
+  }
+  
+  #resumeDiv {
+	background: black;
+  }
+  
+  .visualGrid {
 	display: flex;
 	align-items: flex-start;
 	column-gap: 20px;
-}
-
-.col1, .col2{
+	flex-direction: column;
+  }
+  
+  .col1,
+  .col2 {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-}
-
-/* #superdiv {
-	width: 100px;
-	height: 300px;
-	background-color: aqua;
-} */
-
-
-/* for the containers LATER */
-/* {
-
-	border-radius: 4%;
-} */
-.bigrightdiv {
+  }
+  
+  /* #superdiv {
+	  width: 100px;
+	  height: 300px;
+	  background-color: aqua;
+  } */
+  
+  /* for the containers LATER */
+  /* {
+  
+	  border-radius: 4%;
+  } */
+  .bigrightdiv {
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 8px;
-
-	height: 100vh;
-	padding: 10px;
-
-
+  
+	padding: 0px 10px 0px 10px;
+  
+	height: 97vh;
+	/* padding: 10px; */
+  
 	overflow: scroll;
 	/* border-radius: 4%; */
 	color: brown;
 	background-color: var(---black);
-}
-
-img {
-	height: 100%;
+	scroll-behavior: smooth !important;
+  }
+  
+  .containerImage img {
 	width: 100%;
-
-}
-
-
-
-/* see if overflow is working */
-h1 {
+	max-height: 100%;
+	object-fit: cover;
+  }
+  
+  /* see if overflow is working */
+  h1 {
 	/* text-decoration-line: underline; */
+  
 	color: var(---white);
 	font-family: "helvetica-neue-lt-pro", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 40px;
+	font-size: 30px;
 	text-transform: uppercase;
-	padding-bottom: 30px;
-}
-
-.subDiv {
+	padding-bottom: 15px;
+  }
+  
+  .subDiv {
 	border-top-style: solid;
 	border-top-color: var(---white);
-	border-top-width: 4px;
-}
-
-h2 {
+	/* border-top-width: 4px; */
+  }
+  
+  h2 {
 	/* text-decoration-line: underline; */
 	color: var(---white);
 	font-family: "helvetica-neue-lt-pro", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 14px;
+	font-size: 16px;
 	text-transform: uppercase;
 	border-bottom: 1px solid white;
 	padding-top: 4px;
-	
-
-}
-
-
-p {
+  }
+  
+  h3 {
+	font-family: "helvetica-neue-lt-pro", sans-serif;
+	color: white;
+	padding-bottom: 10px;
+  }
+  
+  p {
 	color: var(---white);
 	font-family: "helvetica-neue-lt-pro", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 14px;
+	font-size: 18px;
+  }
+  p2 {
+	color: var(---white);
+	font-family: "helvetica-neue-lt-pro", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 	
-}
-
-@media screen and (max-width: 1050px) {
+	font-size: 16px;
+  }
+  #allPro {
+	display: flex;
+	flex-direction: row;
+	align-content: space-around;
+	flex-wrap: wrap;
+  }
+  
+  #BioParagraph {
+	padding-bottom: 10px;
+  }
+  
+  .blackDiv {
+	background-color: var(---black);
+	padding: 16px;
+  }
+  
+  @media screen and (max-width: 1050px) {
 	body {
-		display: flex;
-		flex-direction: column;
+	  display: flex;
+	  flex-direction: column;
 	}
-
+  
 	.bigleftdiv {
-		width: 100%;
-		height: 40vh;
+	  width: 100%;
+	  height: 40vh;
 	}
-
+  
 	#nav {
-		position: absolute;
-		top: 50vh;
+	  position: absolute;
+	  top: 50vh;
 	}
-}
-
-/* less than 600px */
-@media screen and (max-width: 600px) {}
-
-/* SCREEN IS SMALLER THAN 530 PX */
-@media screen and (max-width: 530px) {}
-
-/* SCREEN IS SMALLER THATN 400 PX */
-
-@media screen and (max-width: 400px) {}
-
-/* WHEN SCREEN IS SMALLER THAN 350 PX */
-@media screen and (max-width: 350px) {}
+  
+	h1 {
+	  /* padding-bottom: 30px; */
+	  /* padding-top: 30px; */
+	}
+  }
+  
+  /* less than 600px */
+  @media screen and (max-width: 600px) {
+	.desktopnav {
+	  display: none;
+	}
+  
+	.mobilenav {
+	  background-color: black;
+	  color: #ffffff;
+	  padding: 10px 10px 10px 10px;
+	  display: flex;
+	  flex-direction: row;
+	  align-items: center;
+	  justify-content: space-between;
+	}
+  
+	#mobileDropdown {
+	  position: absolute;
+	  z-index: 10;
+	  height: calc(100vh - 30px);
+	  margin: 30px 0px 0px 0px;
+	  margin-left: 0px;
+	  margin-right: 0px;
+	  padding: 10px;
+	  /* display: block; */
+	  /* background-color: var(--matt-black);
+		   */
+	}
+	.textTitle {
+	  display: none;
+	}
+	.mobileTitle {
+	  display: block;
+	}
+  
+	.style1 {
+	  display: none;
+	}
+  
+	.style2 {
+	  display: block;
+	  background-color: var(--matt-black);
+	  width: 100%;
+	  height: 100vh;
+	}
+  
+	.bigleftdiv {
+	  display: none;
+	}
+  
+	#hamburger {
+	  width: 30px;
+	}
+  
+	.mobilenav {
+	  display: flex;
+	  flex-direction: column;
+	}
+  
+	.bigrightdiv {
+	  display: grid;
+	  grid-template-columns: 1fr 1fr;
+	}
+  }
+  
+  /* SCREEN IS SMALLER THAN 530 PX */
+  @media screen and (max-width: 530px) {
+  }
+  
+  /* SCREEN IS SMALLER THATN 400 PX */
+  
+  @media screen and (max-width: 400px) {
+  }
+  
+  /* WHEN SCREEN IS SMALLER THAN 350 PX */
+  @media screen and (max-width: 350px) {
+  }
+  
