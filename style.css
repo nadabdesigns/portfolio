@@ -79,6 +79,13 @@ html {
   right: 30px;
   z-index: 10;
 }
+#rightNav svg {
+	width: 15px;
+	height: auto;
+	display: block;
+	fill: beige;
+}
+
 
 .dot {
   background-color: rgb(85, 85, 85);
