@@ -80,12 +80,11 @@ html {
   z-index: 10;
 }
 #rightNav svg {
-	width: 15px;
-	height: auto;
-	display: block;
-	fill: beige;
+  width: 15px;
+  height: auto;
+  display: block;
+  fill: beige;
 }
-
 
 .dot {
   background-color: rgb(85, 85, 85);
@@ -170,7 +169,6 @@ em {
   font-family: "helvetica-neue-lt-pro", sans-serif;
   background-color: var(---black);
   text-decoration-line: underline;
-  
 }
 
 #resumeDiv {
@@ -276,12 +274,10 @@ p {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-
 }
 .liveLink {
   display: flex;
   flex-direction: ;
-
 }
 #allPro {
   display: flex;
@@ -297,6 +293,26 @@ p {
 .blackDiv {
   background-color: var(---black);
   padding: 16px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #555;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #222;
 }
 
 @media screen and (max-width: 1050px) {
