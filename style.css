@@ -297,12 +297,12 @@ p {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #555;
+  background: #000000;
 }
 
 /* Handle */
@@ -312,7 +312,7 @@ p {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #222;
+  background: #000000;
 }
 
 @media screen and (max-width: 1050px) {
