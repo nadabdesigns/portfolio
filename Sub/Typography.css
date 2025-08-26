@@ -25,6 +25,10 @@ html {
 	/* background-color: var(---black); */
 	scroll-behavior: smooth !important;
 }
+body {
+	margin: 0;
+	overflow-y: auto; /* ensure the body is the scroll container */
+  }
 
 
 
