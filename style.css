@@ -226,7 +226,7 @@ em {
 
 /* Show image when hovering over the container */
 .border:hover img.thumbnaile {
-  opacity: 1;
+  opacity: .8;
   
 }
 
