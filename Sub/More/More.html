@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://typography-interaction-2425.github.io/assets/reset.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../Typography.css">
+	<link rel="stylesheet" href="https://use.typekit.net/dnc4aus.css">
+	<script src="../script.js"></script>
+
+</head>
+
+<body>
+
+	<nav class="desktopnav">
+		<a href="https://nadabdesigns.github.io/portfolio/">
+			<p id="allPro">⇅ All Projects</p>
+		</a>
+	</nav>
+	<nav class="mobilenav">
+		<div id="navShift">
+			<p>⇅ All Projects </p><img src="../Home_Page_Media/Hamburger.svg" id="hamburger">
+		</div>
+		<div id="mobileDropdown" class="style1">
+			<h3> Contact </h3>
+			<h1> Works </h1>
+
+			<div class="visualGrid">
+				<div class="col1">
+					<div>
+						<h2>Typography</h2>
+					</div>
+					<div>
+						<h2>Accountable</h2>
+					</div>
+					<div>
+						<h2>Dyslexia Simulation</h2>
+					</div>
+					<div>
+						<h2>Opal</h2>
+					</div>
+				</div>
+				<div class="col2">
+					<div>
+						<h2>Spot</h2>
+					</div>
+
+					<div>
+						<h2>Burn Out</h2>
+
+					</div>
+				</div>
+
+				<h1> Visual Diary </h1>
+
+
+				<h2>cultural nomad</h2>
+				<h2>scans</h2>
+
+
+				<h2>The Self Sufficient Selfie</h2>
+
+				<h2>Photography</h2>
+				<script>
+					document.addEventListener("DOMContentLoaded", () => {
+						const button = document.querySelector(".h2");
+						const highlight = document.getElementById("h2Change");
+						const hamburger = document.getElementById("hamburger");
+						const mobileDropdown = document.getElementById("mobileDropdown");
+
+						if (button) {
+							button.addEventListener('mouseover', () => {
+								if (mobileDropdown.classList.contains("style2")) {
+									highlight.style.color = "red"; // example action
+								}
+							});
+						}
+
+						hamburger.addEventListener("click", () => {
+							if (!mobileDropdown.classList.contains("style2")) {
+								mobileDropdown.classList.remove("style1");
+								mobileDropdown.classList.add("style2");
+							} else {
+								mobileDropdown.classList.remove("style2");
+								mobileDropdown.classList.add("style1");
+							}
+						});
+					});
+				</script>
+
+
+			</div>
+	</nav>
+
+
+
+
+	<div class="bigleftdiv">
+
+		<div class="subDiv">
+
+			<h1> MORE</h1>
+			<div>
+				<p1>Graphic Design</p1>
+			</div>
+
+		</div>
+
+
+		<div class="visualGrid">
+			<div class="col1">
+				<a href="https://nadabdesigns.github.io/binding/">
+					<em>
+						<div class="liveLink">
+
+							See Live ↵
+
+						</div>
+					</em>
+				</a>
+				<br>
+
+				<p class="p2">The challenge was to design a website based on three articles we reviewed in my
+					Typography and
+					Interactions class, using only typography as a utility.
+					I examined 3 different articles on the topic of Black design. The first article reflects on a
+					single experience as a Black designer. The second explores the history of the Black aesthetic in
+					design. The third article discusses the Eurocentric influences in design, particularly as they
+					relate to white supremacy.
+					<br><br>
+					To shape the visual identity, I immersed myself in typographic research through the People’s
+					Design Archive, referencing historical documentation of transactions involving the purchase of
+					enslaved individuals from the early 1800s. I drew inspiration from the letterforms found in
+					these records and paired these motifs with the color profile of the Pan-African flag, a symbol of
+					unity within the Black community.
+					<br><br>
+					By pulling from Baroque and classical typography found in this documentation and
+					recontextualizing it through my use of color, I aimed to create a more contemporary and nuanced
+					reflection of the Black experience in design, and its lens and role in major cultural movements.
+					<br><br>
+					The site represents the duality and complexity of what heritage means for Black people:
+					simultaneously reflecting the erosion of heritage witnessed through the transatlantic slave
+					trade and the ongoing efforts to mend it through cultural contributions.
+					The result is an amalgamation of the Black experience: a representation of Black aesthetics and
+					a self-aware
+					critique of the design industry itself.
+					<br><br>
+
+
+
+				</p>
+			</div>
+
+
+
+			<!-- <h2>Accountable <br>Dyslexia Simulation <br>Opal</h2>
+				<h2>Spot <br>Typography <br>Burn Out</h2> -->
+
+
+		</div>
+	</div>
+
+	</div>
+
+	<div class="bigrightdiv">
+
+		<!-- add in an image -->
+		<!-- ./ is a short cut for files -->
+		<!-- command click links to see if they lead to the right thing -->
+		<a id="rightNav" href="#scrolled">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166.64 100">
+			  <path
+				d="M82.649,98.753L11.399,27.502c-5.7-5.7-6.242-15.001-.798-20.947C16.379.244,26.186.081,32.172,6.067l50.477,50.477c.02.02.051.02.071,0L133.353,5.913c5.7-5.7,15.001-6.241,20.946-.797,6.311,5.779,6.474,15.585.487,21.571l-72.066,72.066c-.02.02-.051.02-.071,0Z" />
+			</svg>
+		  </a>
+		<div class="containerImage section" id="section-one">
+			<picture>
+				<!-- <div class="textTitle"> Typography<p> web Design</p>
+				</div> -->
+				<a href=""><img src="../Home_Page_Media/Free_M_Mockups_iMac_24_Inch.jpg"></a>
+
+
+
+			</picture>
+
+		</div>
+
+
+
+		<div class="containerImage section" id="section-two">
+			<!-- <div class="textTitle" id="accountable"> Accountable <p>UX/UI</p>
+			</div> -->
+			<a href=""><img src="../Sub/Typography-pt2.png"></a>
+			<div class="mobileTitle">Accountable <p>UX/UI</p>
+			</div>
+			<!-- <a href=""><img src="./Home_Page_Media/Dice.png"></a> -->
+		</div>
+		<div class="containerImage section" id="section-three">
+			<!-- <div class="textTitle" id="dyslexia"> Dyslexia Simulation<p>Mobile and Web Design</p>
+			</div> -->
+
+
+
+
+		</div>
+		<div class="containerImage section" id="section-four">
+			<!-- <div class="textTitle">Opal<p> Logo Design<br> 3D Animation</p>
+			</div> -->
+			<a href=""><img src="../Sub/Typography_Phone_Mockup.jpg"></a>
+
+		</div>
+		<div class="containerImage section" id="section-four"></div>
+		<!-- <div class="textTitle">Opal<p> Logo Design<br> 3D Animation</p>
+		</div> -->
+		<img src="../Sub/Typography_Reasherch.png" id="scrolled">
+
+
+
+	</div>
+
+
+
+	</div>
+
+</body>
+
+<!-- <script>const myDot = document.getElementsByClassName("dot")[0];
+myDot.style.backgroundColor = "yellow";</script> -->
+
+</html>
