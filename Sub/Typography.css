@@ -67,6 +67,14 @@ html {
 	display: none;
 }
 
+p1 {
+	font-family: "helvetica-neue-lt-pro", sans-serif;
+	color: var(---white);
+	font-size: 12px;
+	padding-top: 5px;
+	
+}
+
 #rightNav {
 	background-color: var(---black);
 	height: 200px;
@@ -80,20 +88,22 @@ html {
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
-	padding-top: 15px;
+	padding-top: 30px;
 	padding-bottom: 15px;
 	right: 30px;
 	z-index: 10;
 }
+
 #rightNav svg {
 	width: 15px;
 	height: auto;
 	display: block;
 	fill: rgb(85, 85, 85);
 }
+
 #rightNav:hover svg {
 	fill: white;
-  }
+}
 
 
 .dot {
@@ -201,6 +211,12 @@ em {
 	width: 100%;
 }
 
+.border {
+	display: flex;
+	flex-direction: row;
+	border-top: 1px solid white;
+}
+
 /* #superdiv {
 	  width: 100px;
 	  height: 300px;
@@ -245,12 +261,22 @@ h1 {
 	font-style: normal;
 	font-size: 30px;
 	text-transform: uppercase;
-	padding-bottom: 15px;
+
 }
 
 .subDiv {
 	border-top-style: solid;
-	border-top-color: var(---white);
+    border-top-color: var(---white);
+    padding-bottom: 15px;
+    display: flex
+;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: end;
+    /* border-top-width: 4px; */
+    /* align-items: center; */
+	align-items: flex-start
+
 	/* border-top-width: 4px; */
 }
 
@@ -271,13 +297,19 @@ h3 {
 	color: white;
 	padding-bottom: 10px;
 }
+.liveLink{
+	text-decoration: underline;
+	font-style: italic;
+   
+	/* text-align: end; */
+}
 
 p {
 	color: var(---white);
 	font-family: "helvetica-neue-lt-pro", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 p2 {
