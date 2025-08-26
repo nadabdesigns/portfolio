@@ -202,13 +202,29 @@ em {
 
 }
 
-#thumbnaile {
+.thumbnaile {
   mix-blend-mode: lighten;
   max-width: 150px;
   max-height: 150px;
   position: absolute;
   right: 0px;
+  opacity: 0;
 
+}
+
+
+/* Hide image by default */
+.border img.thumbnaile {
+  /* display: block; */
+  /* width: 100%; */
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show image when hovering over the container */
+.border:hover img.thumbnaile {
+  opacity: 1;
 }
 
 /* #superdiv {
