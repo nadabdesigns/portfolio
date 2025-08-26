@@ -39,6 +39,10 @@ html {
 
   /* ADD IN LATER */
 }
+#DestopnavFirst {
+  padding-left: 16px;
+  width: 30%;
+}
 
 #navShift {
   display: flex;
@@ -182,8 +186,7 @@ em {
   flex-direction: column;
 }
 
-.col1,
-.col2 {
+.col1 {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -250,8 +253,13 @@ h2 {
   font-style: normal;
   font-size: 16px;
   text-transform: uppercase;
-  border-bottom: 1px solid white;
+
   padding-top: 4px;
+}
+.border{
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid white;
 }
 
 h3 {
@@ -275,6 +283,25 @@ p {
   font-style: normal;
   font-size: 16px;
 }
+p4 {
+  color: var(---white);
+  font-family: "helvetica-neue-lt-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.aTag{
+  display: flex
+  ;
+      flex-direction: row;
+      align-content: center;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+}
+
 .liveLink {
   display: flex;
   flex-direction: ;
