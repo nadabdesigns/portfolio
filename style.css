@@ -8,11 +8,13 @@
   ---white: #ffffff;
   --type: "helvetica-neue-lt-pro", sans-serif;
 }
-::-webkit-scrollbar {
-}
+
+::-webkit-scrollbar {}
+
 ::-webkit-scrollbar-track {
   background-color: red;
 }
+
 ::-webkit-scrollbar-thumb {
   width: 100px;
 
@@ -39,6 +41,7 @@ html {
 
   /* ADD IN LATER */
 }
+
 #DestopnavFirst {
   padding-left: 16px;
   width: 30%;
@@ -50,6 +53,7 @@ html {
   width: 100%;
   padding: 0px, 0px, 0px, 0px;
 }
+
 .mobileTitle {
   display: none;
 }
@@ -83,6 +87,7 @@ html {
   right: 30px;
   z-index: 10;
 }
+
 #rightNav svg {
   width: 15px;
   height: auto;
@@ -96,16 +101,19 @@ html {
   width: 10px;
   border-radius: 10px;
 }
+
 .dot:hover {
   background-color: rgb(255, 255, 255);
   height: 10px;
   width: 10px;
   border-radius: 10px;
 }
+
 .active {
   background-color: rgb(255, 255, 255);
   scale: 1.5;
 }
+
 .dot:active {
   background-color: rgb(134, 134, 134);
   height: 10px;
@@ -190,6 +198,17 @@ em {
   display: flex;
   flex-direction: column;
   width: 100%;
+  position: relative;
+
+}
+
+#thumbnaile {
+  mix-blend-mode: lighten;
+  max-width: 150px;
+  max-height: 150px;
+  position: absolute;
+  right: 0px;
+
 }
 
 /* #superdiv {
@@ -256,7 +275,8 @@ h2 {
 
   padding-top: 4px;
 }
-.border{
+
+.border {
   display: flex;
   flex-direction: row;
   border-top: 1px solid white;
@@ -275,6 +295,7 @@ p {
   font-style: normal;
   font-size: 18px;
 }
+
 /* smaller text */
 .p2 {
   color: var(---white);
@@ -283,6 +304,7 @@ p {
   font-style: normal;
   font-size: 16px;
 }
+
 p4 {
   color: var(---white);
   font-family: "helvetica-neue-lt-pro", sans-serif;
@@ -291,21 +313,22 @@ p4 {
   font-size: 10px;
   text-transform: uppercase;
 }
-.aTag{
-  display: flex
-  ;
-      flex-direction: row;
-      align-content: center;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
+
+.aTag {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .liveLink {
   display: flex;
   flex-direction: ;
 }
+
 #allPro {
   display: flex;
   flex-direction: row;
@@ -393,9 +416,11 @@ p4 {
     /* background-color: var(--matt-black);
 		 */
   }
+
   .textTitle {
     display: none;
   }
+
   .mobileTitle {
     display: block;
   }
@@ -431,14 +456,11 @@ p4 {
 }
 
 /* SCREEN IS SMALLER THAN 530 PX */
-@media screen and (max-width: 530px) {
-}
+@media screen and (max-width: 530px) {}
 
 /* SCREEN IS SMALLER THATN 400 PX */
 
-@media screen and (max-width: 400px) {
-}
+@media screen and (max-width: 400px) {}
 
 /* WHEN SCREEN IS SMALLER THAN 350 PX */
-@media screen and (max-width: 350px) {
-}
+@media screen and (max-width: 350px) {}
