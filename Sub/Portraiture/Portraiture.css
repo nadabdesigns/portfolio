@@ -343,6 +343,9 @@ p2 {
 	background-color: var(---black);
 	padding: 16px;
 }
+.PaddingImg {
+	padding-bottom: 7px;
+}
 
 @media screen and (max-width: 1050px) {
 	body {
