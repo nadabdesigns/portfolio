@@ -233,8 +233,8 @@ em {
 	  border-radius: 4%;
   } */
 .bigrightdiv {
-	display: flex;
-	flex-direction: row;
+	display: grid;
+	grid-template-columns: 1fr;
 	gap: 8px;
 
 	padding: 0px 10px 0px 10px;
@@ -247,9 +247,6 @@ em {
 	color: brown;
 	background-color: var(---black);
 	scroll-behavior: smooth !important;
-}
-.FirstCol{
-	width: 50%;
 }
 
 .containerImage img {
