@@ -221,7 +221,6 @@ em {
 	border-top: 1px solid white;
 }
 
-
 /* #superdiv {
 	  width: 100px;
 	  height: 300px;
@@ -234,9 +233,9 @@ em {
 	  border-radius: 4%;
   } */
 .bigrightdiv {
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 8px;
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
 
 	padding: 0px 10px 0px 10px;
 
@@ -248,6 +247,9 @@ em {
 	color: brown;
 	background-color: var(---black);
 	scroll-behavior: smooth !important;
+}
+.FirstCol{
+	width: 50%;
 }
 
 .containerImage img {
@@ -340,6 +342,9 @@ p2 {
 .blackDiv {
 	background-color: var(---black);
 	padding: 16px;
+}
+.PaddingImg {
+	padding-bottom: 7px;
 }
 
 @media screen and (max-width: 1050px) {
