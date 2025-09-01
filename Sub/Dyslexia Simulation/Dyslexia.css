@@ -108,6 +108,9 @@ p1 {
 #rightNav:hover svg {
 	fill: white;
 }
+video{
+	width: 100%;
+}
 
 
 .dot {
