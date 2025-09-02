@@ -269,12 +269,21 @@ em {
 	flex-direction: row;
 
 }
-#imgBig{
+
+#imgBig {
 	width: 100%;
 }
-video{
+
+video {
 	width: 50%;
+	padding-right: 8px;
 }
+
+.FullBleedDiv {
+	width: 100%;
+}
+
+
 
 /* see if overflow is working */
 h1 {

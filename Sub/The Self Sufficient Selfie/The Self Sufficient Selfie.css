@@ -234,8 +234,8 @@ em {
   } */
 .bigrightdiv {
 	display: flex;
-	flex-direction: row;
-	gap: 10px;
+	flex-direction: column;
+	/* gap: 10px; */
 
 	padding: 0px 10px 0px 10px;
 
@@ -248,8 +248,16 @@ em {
 	background-color: var(---black);
 	scroll-behavior: smooth !important;
 }
+.FullBleedDiv{
+	padding-bottom: 8px;
+}
 .FirstCol{
 	width: 50%;
+}
+.twoCol {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
 }
 
 .containerImage img {
