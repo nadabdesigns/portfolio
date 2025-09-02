@@ -255,6 +255,30 @@ video{
 .FirstCol{
 	width: 100%;
 }
+#bentoBox{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	/* background-color: aqua; */
+
+}
+.bentoBoxSub{
+
+	width: 50%;
+	/* background-color: rgb(255, 0, 76); */
+	padding: none
+
+}
+video{
+	object-fit: cover;
+	
+}
+#imgBento{
+	height: 100%;
+    object-fit: cover;
+	overflow: hidden;
+}
+
 
 .containerImage img {
 	width: 100%;
