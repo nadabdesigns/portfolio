@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://typography-interaction-2425.github.io/assets/reset.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./ClearMe.css">
+	<link rel="stylesheet" href="https://use.typekit.net/dnc4aus.css">
+	<!-- <script src="../script.js"></script> -->
+
+</head>
+
+<body>
+
+	<nav class="desktopnav">
+		<a href="https://nadabdesigns.github.io/portfolio/">
+			<p id="allPro">⇅ All Projects</p>
+		</a>
+	</nav>
+	<nav class="mobilenav">
+		<div id="navShift">
+			<p>⇅ All Projects </p><img src="../../Home_Page_Media/Hamburger.svg" id="hamburger">
+		</div>
+		<div id="mobileDropdown" class="style1">
+			<h3> Contact </h3>
+			<h1> Works </h1>
+
+			<div class="visualGrid">
+				<div class="col1">
+					<div>
+						<h2>Typography</h2>
+					</div>
+					<div>
+						<h2>Accountable</h2>
+					</div>
+					<div>
+						<h2>Dyslexia Simulation</h2>
+					</div>
+					<div>
+						<h2>Opal</h2>
+					</div>
+				</div>
+				<div class="col2">
+					<div>
+						<h2>Spot</h2>
+					</div>
+
+					<div>
+						<h2>Burn Out</h2>
+
+					</div>
+				</div>
+
+				<h1> Visual Diary </h1>
+
+
+				<h2>cultural nomad</h2>
+				<h2>scans</h2>
+
+
+				<h2>The Self Sufficient Selfie</h2>
+
+				<h2>Photography</h2>
+				<script>
+					document.addEventListener("DOMContentLoaded", () => {
+						const button = document.querySelector(".h2");
+						const highlight = document.getElementById("h2Change");
+						const hamburger = document.getElementById("hamburger");
+						const mobileDropdown = document.getElementById("mobileDropdown");
+
+						if (button) {
+							button.addEventListener('mouseover', () => {
+								if (mobileDropdown.classList.contains("style2")) {
+									highlight.style.color = "red"; // example action
+								}
+							});
+						}
+
+						hamburger.addEventListener("click", () => {
+							if (!mobileDropdown.classList.contains("style2")) {
+								mobileDropdown.classList.remove("style1");
+								mobileDropdown.classList.add("style2");
+							} else {
+								mobileDropdown.classList.remove("style2");
+								mobileDropdown.classList.add("style1");
+							}
+						});
+					});
+				</script>
+
+
+			</div>
+	</nav>
+
+
+
+
+	<div class="bigleftdiv">
+
+		<div class="subDiv">
+
+			<h1> ACCOUNTABLE</h1>
+			<div>
+				<p1> UX/UI</p1>
+			</div>
+
+		</div>
+
+
+		<div class="visualGrid">
+			<div class="col1">
+
+				<p class="p2">
+					In the age of social media, social rejection can have far-reaching consequences. Online and offline
+					communities now wield immense influence over values and habits, while growing awareness of human
+					psychology has fueled media discourse on the harms of social pressure, popularizing terms like
+					“groupthink” and “peer pressure.”
+					<br><br>
+					Social pressure often carries a negative connotation, but at its core, it reflects our natural drive
+					to connect and belong. When guided with intention, social pressure can become a powerful tool for
+					personalized growth by fostering a shared sense of progress. Based on this sentiment, I‘ve designed
+					a tool that encourages meaningful, community-driven development.
+					<br><br>
+					Strategy
+					<br><br>
+					Motivation is the spark that ignites good habits, which is why I’ve made it the cornerstone of
+					Accountable’s strategy. It's a blend of internal desire and external reinforcement, and because
+					everyone is motivated differently, Accountable offers customizable frameworks and templates to help
+					you set and achieve your goals. Engaging features trigger flow states and reduce distractions
+					through a gamified approach. Manage your tasks, earn rewards, and unlock global achievements with
+					friends through interactive challenges. Grow together. Unlock your full potential with
+					Accountable.<br><br>
+					Research
+					Observing the significant influence my peers had on my habit formation process led me to explore
+					themes in human psychology more deeply. I reviewed case studies on cognitive dissonance, injunctive
+					norms, groupthink, and habitual behaviors to gain a deeper understanding of how habits are formed
+					and sustained.<br><br>
+					After gaining a deeper understanding of these concepts, I studied successful examples that
+					incorporated behavioral psychology into their UI design. I conducted a competitor analysis of apps
+					that specifically utilized gamification, behavioral nudges to encourage habit formation. Duo Lingo,
+					Flora, and Two Dots are all notable instances of this approach.<br><br>
+					User Interviews <br><br>
+					Through my user interviews, I set out to understand why some people struggle to achieve their goals
+					and to explore the mindsets behind those challenges. In the first round, I focused on what users
+					truly value in goal-setting and motivation: How do they get motivated? What sustains that
+					motivation? And what tools do they rely on? In the second round, I built on these insights using a
+					more targeted framework to uncover: Who our user types are and how they are motivated; what
+					behavioral triggers reinforce healthy habits; and examples of successful behavioral changes driven
+					by social pressure.<br><br>
+					Key Takeaways<br><br>
+					After reviewing the user interviews, I found several key takeaways involving cultural context, fear,
+					and methodology. One finding is that fear and guilt do not lead to engagement—they make people
+					passive, causing them to withdraw and redirect their attention to something that feels better. How
+					much we look to other people’s behavior to mimic our own depends on several factors, including
+					cultural context. Finally, motivation is complex—people have vastly different methods for staying
+					motivated, which correspond to their personal preferences and cultural context.
+
+					User Types<br><br>
+					My research also revealed two primary user types: the Introspective User and the Extrospective User.
+					Several participants moved between intrinsic and extrinsic motivation depending on the context.
+					These terms are not fixed personality labels but rather states of mind or motivational frameworks
+					that can shift over time.<br><br>
+					The Introspective User is primarily intrinsically motivated. They may prefer to avoid status symbols
+					and might not respond positively to global rankings. Instead, they are more motivated by personal
+					milestones, such as breaking their own records, rather than competing for a public rank.
+					The Extrospective User is primarily extrinsically motivated. They may prefer competitive features
+					and engage with them frequently, using elements like Challenges strategically as a way to climb the
+					ranks.<br><br>
+					Additional Key Takeaway:
+					Across both groups, there was a strong desire for autonomy, with users valuing flexibility in how
+					they engage with motivational tools. Because motivation is fluid, offering optional challenges can
+					help re-engage users when their mindset shifts or when they are open to new approaches. People want
+					to shape their own methodologies and create spaces that support their growth. Different users seek
+					different experiences: some found the Focus Mode Duo intimidating, while others found it motivating.
+					What they all share is a desire to feel empowered and in control of their personal growth.
+					Problem Statement :<br><br>
+					People operate in several contexts when it comes to goal completion. These variables depend on
+					cultural, social, and mental health contexts, among other factors, which can influence the most
+					effective methods for pursuing their goals.<br><br>
+					The Solution:<br><br>
+					Accountable is designed to provide customizable frameworks and templates that help users set and
+					achieve their goals while staying motivated. Its engaging features support focus and encourage a
+					state of flow. Users can manage tasks, earn rewards, and reach milestones with friends through
+					interactive, gamified challenges.
+					Features:<br><br>
+					This isn’t your average to-do list app. I created Accountable using techniques from my research to
+					turn intentions into achievements. Its UI offers both single-player and dual-focus modes, rewarding
+					consistency by recognizing and reinforcing streaks to motivate sustained effort. It facilitates flow
+					states by providing encouragement and support, and it uses gamification such as combos and versus
+					modes to enhance engagement. This approach rewards consistency, helps users enter a state of flow,
+					and makes goal-setting more engaging through playful competition.
+					Widgets and Notification:<br><br>
+					Users have the ability to add widgets and notifications to stay motivated throughout their
+					goal-tracking journey.<br><br>
+					Duo:
+					With a more fluid approach, Accounable also offers a duel mode where you can race against a friend.
+					In this mode, you choose your opponent from your buddy list. You still set a timer, but if you leave
+					the app, your star stops moving. The goal is to reach the planet before your opponent, and if you
+					win, you also earn a streak.<br><br>
+					Accountability Buddies
+					We want you to choose your own way to turn apathy into action. Accountable is built to keep you
+					moving forward in the way that works best for you. It does this by harnessing social accountability
+					to encourage meaningful, community-driven growth.
+					Introducing the Accountability Buddy system: with Accountability Buddies, you can assign trusted
+					people to monitor your progress on specific to-dos and tasks. Through this system, you can create
+					multiple to-do lists, assign them to different projects, and have your close contacts track your
+					progress to help keep you on track.<br><br>
+					Values:<br><br>
+					Accountable works with you, not against you. In an era of constant connectivity, user autonomy is
+					our top priority. We give users the ability to add or remove features, allowing them to set up their
+					goal space in a way that works best for them.
+					Users can choose whether to see who’s working on what project in the document dashboard. They can
+					also edit the order of tasks, similar to how it works in Notion.<br><br>
+					Achievements:<br><br>
+					Accountable turns intentions into achievements. The Achievements page celebrates your progress with
+					a summary of your wins, streaks, and completed challenges. Track your progress, revisit challenges,
+					and check the leaderboard to see your global ranking and the standings of your top three buddies.
+					The leaderboard uses a point system to show your global ranking. Each achievement is worth a
+					different number of points depending on the task, and your ranking is calculated by adding up the
+					total points from all your achievements. After user testing, we made the leaderboard optional so
+					users who feel anxious about competition can choose not to view it.
+					Branding:<br><br>
+					To stand out in a crowded productivity space—and inspire lasting engagement—Accountable employs
+					visuals designed to both focus and motivate. The bold to-do list conveys clarity and purpose, while
+					the boxy shapes signal structure and organization. A starry theme evokes a sense of importance and
+					wonder, inviting users into a more meaningful task-setting experience. Together, these elements
+					create a design language that feels futuristic, reflecting our vision for the next era of task
+					management.
+
+
+
+
+				</p>
+			</div>
+
+
+
+			<!-- <h2>Accountable <br>Dyslexia Simulation <br>Opal</h2>
+				<h2>Spot <br>Typography <br>Burn Out</h2> -->
+
+
+		</div>
+	</div>
+
+	</div>
+
+	<div class="bigrightdiv">
+
+
+
+
+		<!-- add in an image -->
+		<!-- ./ is a short cut for files -->
+		<!-- command click links to see if they lead to the right thing -->
+		<a id="rightNav" href="#scrolled">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166.64 100">
+				<path
+					d="M82.649,98.753L11.399,27.502c-5.7-5.7-6.242-15.001-.798-20.947C16.379.244,26.186.081,32.172,6.067l50.477,50.477c.02.02.051.02.071,0L133.353,5.913c5.7-5.7,15.001-6.241,20.946-.797,6.311,5.779,6.474,15.585.487,21.571l-72.066,72.066c-.02.02-.051.02-.071,0Z" />
+			</svg>
+		</a>
+		<div class="FirstCol">
+
+			<div class="containerImage section" id="section-one">
+
+				<!-- <div class="textTitle"> Typography<p> web Design</p>
+					</div> -->
+				<img src="./Mockup.png"></a>
+
+			</div>
+			
+			<div class="containerImage section" id="section-one">
+
+				<!-- <div class="textTitle"> Typography<p> web Design</p>
+					</div> -->
+				<img src="./Instagram post - 1.png"></a>
+
+			</div>
+
+		
+			<div class="containerImage section" id="section-one">
+
+				<!-- <div class="textTitle"> Typography<p> web Design</p>
+					</div> -->
+				<img src="./ICONS AND SYMBOLS.png">
+
+			</div>
+			<div class="containerImage section" id="section-one">
+
+				<!-- <div class="textTitle"> Typography<p> web Design</p>
+					</div> -->
+				<img src="./Phone screens Bento Box.png">
+
+			</div>
+			<div class="containerImage section" id="section-one">
+
+				<!-- <div class="textTitle"> Typography<p> web Design</p>
+					</div> -->
+				<img src="./Letter Breakdown.png">
+
+			</div>
+			<div class="containerImage section" id="section-one">
+
+				<!-- <div class="textTitle"> Typography<p> web Design</p>
+					</div> -->
+				<img src="./Free_K_Mockups_iPhone_15_Pro.jpg">
+
+			</div>
+			
+
+
+
+
+
+
+
+
+			<div class="containerImage section" id="section-one">
+
+				<!-- <div class="textTitle"> Typography<p> web Design</p>
+					</div> -->
+				<img src="./Three Phone screens.png" >
+
+			</div>
+			<div class="containerImage section" id="section-one">
+
+				<!-- <div class="textTitle"> Typography<p> web Design</p>
+					</div> -->
+				<img src="./two display.png">
+
+			</div>
+			<div id="bentoBox">
+				<div class="bentoBoxSub">
+					<img src="./Half IMAGE.png"id="imgBento">
+				</div>
+				<div class="bentoBoxSub">
+
+					<video autoplay muted loop playsinline >
+						<source src="./Videos/add or remove feature_1.webm" type="video/webm" />
+						<source src="./Videos/add or remove feature.mp4" type="video/mp4" />
+					</video>
+
+
+					<video autoplay muted loop playsinline>
+						<source src="./Videos/Screen Recording 2025-05-09 at 1.47.14 PM_1.webm" type="video/webm" />
+						<source src="./Videos/Screen Recording 2025-05-09 at 1.47.14 PM.mp4" type="video/mp4" />
+					</video>
+
+
+					<video autoplay muted loop playsinline >
+						<source src="./Videos/Buddies_1.webm" type="video/webm" />
+						<source src="./Videos/Buddies.mp4" type="video/mp4" />
+					</video>
+
+				</div>
+
+
+
+
+			</div>
+
+
+
+
+
+			
+
+
+		
+
+
+
+
+
+
+
+		</div>
+
+
+
+
+	</div>
+
+
+
+
+
+
+	</div>
+
+</body>
+
+<!-- <script>const myDot = document.getElementsByClassName("dot")[0];
+myDot.style.backgroundColor = "yellow";</script> -->
+
+</html>
