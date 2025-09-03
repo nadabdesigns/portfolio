@@ -25,10 +25,12 @@ html {
 	/* background-color: var(---black); */
 	scroll-behavior: smooth !important;
 }
+
 body {
 	margin: 0;
-	overflow-y: auto; /* ensure the body is the scroll container */
-  }
+	overflow-y: auto;
+	/* ensure the body is the scroll container */
+}
 
 
 
@@ -76,7 +78,7 @@ p1 {
 	color: var(---white);
 	font-size: 12px;
 	padding-top: 5px;
-	
+
 }
 
 #rightNav {
@@ -233,9 +235,10 @@ em {
 	  border-radius: 4%;
   } */
 
-video{
+video {
 	width: 100%;
 }
+
 .bigrightdiv {
 	display: flex;
 	flex-direction: row;
@@ -252,30 +255,44 @@ video{
 	background-color: var(---black);
 	scroll-behavior: smooth !important;
 }
-.FirstCol{
+
+.FirstCol {
 	width: 100%;
 }
-#bentoBox{
+
+#bentoBox {
 	display: flex;
 	flex-direction: row;
-	width: 100%;
+	overflow: clip;
+	gap: 10px;
+	padding-bottom: 10px;
+
 	/* background-color: aqua; */
 
 }
-.bentoBoxSub{
+
+.subImg {
+	width: 50%;
+	
+	object-fit: cover;
+	overflow: clip;
+}
+
+.bentoBoxSub {
 
 	width: 50%;
 	/* background-color: rgb(255, 0, 76); */
 	padding: none
+}
+
+video {
+	object-fit: cover;
 
 }
-video{
-	object-fit: cover;
-	
-}
-#imgBento{
+
+#imgBento {
 	height: 100%;
-    object-fit: cover;
+	object-fit: cover;
 	overflow: hidden;
 }
 
@@ -302,20 +319,19 @@ h1 {
 
 .subDiv {
 	border-top-style: solid;
-    border-top-color: var(---white);
-    padding-bottom: 15px;
-    display: flex
-;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: end;
-    /* border-top-width: 4px; */
-    /* align-items: center; */
-	align-items: flex-start
-
+	border-top-color: var(---white);
+	padding-bottom: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: end;
 	/* border-top-width: 4px; */
+	/* align-items: center; */
+	align-items: flex-start
+		/* border-top-width: 4px; */
 }
-#bento-box{
+
+#bento-box {
 	display: flex;
 	flex-direction: row;
 }
@@ -337,10 +353,11 @@ h3 {
 	color: white;
 	padding-bottom: 10px;
 }
-.liveLink{
+
+.liveLink {
 	text-decoration: underline;
 	font-style: italic;
-   
+
 	/* text-align: end; */
 }
 
