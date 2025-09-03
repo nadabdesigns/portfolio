@@ -315,6 +315,10 @@ h1 {
 
 	/* border-top-width: 4px; */
 }
+#bento-box{
+	display: flex;
+	flex-direction: row;
+}
 
 h2 {
 	/* text-decoration-line: underline; */
