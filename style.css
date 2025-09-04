@@ -424,6 +424,9 @@ p4 {
   .desktopnav {
     display: none;
   }
+  h3{
+    display: none;
+  }
 
   .mobilenav {
     background-color: black;
