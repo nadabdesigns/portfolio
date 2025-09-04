@@ -250,17 +250,17 @@
 					</div>
 				</div>
 			</div>
-			
-				
-			  
+
+
+
 
 
 
 
 		</div>
-		
-		  
-		
+
+
+
 
 		<div class="bigrightdiv">
 
@@ -289,6 +289,8 @@
 				</div>
 				<a href="./Sub/Typography/Typography.html"><img
 						src="./Home_Page_Media/Free_M_Mockups_iMac_24_Inch.jpg"></a>
+				<!-- <div class="mobileTitle">Accountable <p>UX/UI</p>
+				</div> -->
 
 
 
@@ -298,31 +300,44 @@
 			<div class="containerImage section" id="section-two">
 				<div class="textTitle" id="accountable"> Accountable <p>UX/UI</p>
 				</div>
-				<a href="./Sub/Accountable/Accountable.html"><img src="./Home_Page_Media/04_mockup.jpg"></a>
 
-				<div class="mobileTitle">Accountable <p>UX/UI</p>
-				</div>
+				<a href="./Sub/Accountable/Accountable.html"><img src="./Home_Page_Media/04_mockup.jpg"></a>
+				<!-- <div class="mobileTitle">Accountable <p>UX/UI</p>
+				</div> -->
+
+
 				<!-- <a href=""><img src="./Home_Page_Media/Dice.png"></a> -->
 			</div>
 			<div class="containerImage section" id="section-three">
 				<div class="textTitle" id="dyslexia"> Dyslexia Simulation<p>Mobile and Web Design</p>
 				</div>
 
+
 				<a href="./Sub/Dyslexia Simulation/Dyslexia.html"><img src="./Home_Page_Media/Dyslexia.jpg"></a>
+				<!-- <div class="mobileTitle">Accountable <p>UX/UI</p>
+				</div> -->
 
 
 			</div>
 			<div class="containerImage section" id="section-four">
 				<div class="textTitle">Opal<p> Logo Design<br> 3D Animation</p>
 				</div>
+
 				<a href="./Sub/Opal/Opal.html"><img src="./Home_Page_Media/opal.png"></a>
+				<!-- <div class="mobileTitle">Accountable <p>UX/UI</p>
+				</div> -->
+
 
 			</div>
 			<div class="containerImage section" id="section-five">
 				<div class="textTitle"> Spot<p>Brand Identity, Logo Design,
 						and 3D Animation</p>
 				</div>
+
 				<a href="./Sub/Spot/Spot.html"><img src="./Home_Page_Media/Spot.jpg"></a>
+				<!-- <div class="mobileTitle">Accountable <p>UX/UI</p>
+				</div> -->
+
 
 			</div>
 			<div class="containerImage section" id="section-six">
@@ -330,67 +345,71 @@
 				</div>
 
 				<a href="./Sub/Burn_Out/BurnOut.html"><img src="./Home_Page_Media/Box_3_ vertical.png"></a>
+				<!-- <div class="mobileTitle">Accountable <p>UX/UI</p>
+				</div> -->
 
 			</div>
 			<div class="containerImage section" id="section-seven">
 				<div class="textTitle"> Links <p> Web Design</p>
 				</div>
 				<a href="./Sub/Links/Links.html"><img src="./Home_Page_Media/Links.png"></a>
+				<!-- <div class="mobileTitle">Accountable <p>UX/UI</p>
+				</div> -->
 
 			</div>
 			<script>
 				document.addEventListener("DOMContentLoaded", () => {
-				  // Use your mobile breakpoint; your CSS uses 600px for "true" mobile
-				  const mq = window.matchMedia("(max-width: 1050px)");
-			  
-				  let intervalId = null;
-				  let images = [];
-				  let idx = 0;
-			  
-				  function startSlideshow() {
-					// Prevent duplicates if called again
-					if (intervalId) return;
-			  
-					images = Array.from(document.querySelectorAll(".thumbnaile"));
-					if (images.length === 0) return;
-			  
-					// Set initial state
-					images.forEach(img => img.style.opacity = 0);
-					idx = 0;
-					images[idx].style.opacity = 1;
-			  
-					intervalId = setInterval(() => {
-					  images[idx].style.opacity = 0;
-					  idx = (idx + 1) % images.length;
-					  images[idx].style.opacity = .8;
-					}, 3000);
-				  }
-			  
-				  function stopSlideshow() {
-					if (intervalId) {
-					  clearInterval(intervalId);
-					  intervalId = null;
+					// Use your mobile breakpoint; your CSS uses 600px for "true" mobile
+					const mq = window.matchMedia("(max-width: 1050px)");
+
+					let intervalId = null;
+					let images = [];
+					let idx = 0;
+
+					function startSlideshow() {
+						// Prevent duplicates if called again
+						if (intervalId) return;
+
+						images = Array.from(document.querySelectorAll(".thumbnaile"));
+						if (images.length === 0) return;
+
+						// Set initial state
+						images.forEach(img => img.style.opacity = 0);
+						idx = 0;
+						images[idx].style.opacity = 1;
+
+						intervalId = setInterval(() => {
+							images[idx].style.opacity = 0;
+							idx = (idx + 1) % images.length;
+							images[idx].style.opacity = .8;
+						}, 3000);
 					}
-					// Reset so desktop hover works as you designed
-					if (images && images.length) {
-					  images.forEach(img => img.style.opacity = "");
+
+					function stopSlideshow() {
+						if (intervalId) {
+							clearInterval(intervalId);
+							intervalId = null;
+						}
+						// Reset so desktop hover works as you designed
+						if (images && images.length) {
+							images.forEach(img => img.style.opacity = "");
+						}
 					}
-				  }
-			  
-				  function applyMode(e) {
-					if (mq.matches) {
-					  startSlideshow();   // mobile
-					} else {
-					  stopSlideshow();    // desktop/tablet
+
+					function applyMode(e) {
+						if (mq.matches) {
+							startSlideshow();   // mobile
+						} else {
+							stopSlideshow();    // desktop/tablet
+						}
 					}
-				  }
-			  
-				  // Initial apply + react to viewport changes
-				  applyMode();
-				  mq.addEventListener("change", applyMode);
+
+					// Initial apply + react to viewport changes
+					applyMode();
+					mq.addEventListener("change", applyMode);
 				});
-			  </script>
-			  
+			</script>
+
 
 
 		</div>

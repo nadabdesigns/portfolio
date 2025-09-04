@@ -445,6 +445,17 @@ p4 {
 
   .mobileTitle {
     display: block;
+    font-family: "helvetica-neue-lt-pro", sans-serif;
+    color: #e4e4e4;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 3px;
+    padding-bottom: 20px;
+
+  }
+  p {
+    font-size: 16px;
+    
   }
 
   .style1 {
@@ -492,7 +503,7 @@ p4 {
   
   }
   .bigrightdiv{
-    padding: 0px 16px 0px 16px;
+    padding: 16px 16px 0px 16px;
     gap: 8px;
   }
 
