@@ -514,6 +514,20 @@ p4 {
     display: flex;
     flex-direction: column;
   }
+  .bigleftdiv :nth-child(1){
+    order: 2;
+
+  }
+  .bigleftdiv :nth-child(2){
+    order: 2;
+
+  }
+  .bigleftdiv :nth-child(3){
+    order: 1;
+
+  }
+ 
+
 
 
 
