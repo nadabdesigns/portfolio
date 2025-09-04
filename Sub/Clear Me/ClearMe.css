@@ -31,6 +31,9 @@ body {
 	overflow-y: auto;
 	/* ensure the body is the scroll container */
 }
+.visualGridMobile{
+display: none;
+}
 
 
 
@@ -479,8 +482,11 @@ p2 {
 
 	.bigrightdiv {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
 	}
+	.visualGridMobile{
+		display: block;
+		}
 }
 
 /* SCREEN IS SMALLER THAN 530 PX */
