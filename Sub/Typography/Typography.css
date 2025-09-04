@@ -25,7 +25,9 @@ html {
 	/* background-color: var(---black); */
 	scroll-behavior: smooth !important;
 }
-
+.mobileDisc{
+	display: none;
+}
 
 
 
@@ -80,10 +82,12 @@ html {
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
-	padding-top: 15px;
+	padding-top: 30px;
 	padding-bottom: 15px;
 	right: 30px;
 	z-index: 10;
+	filter: drop-shadow(0 0 0.1rem rgb(159, 159, 159));
+	
 }
 #rightNav svg {
 	width: 15px;
@@ -121,6 +125,9 @@ html {
 	width: 10px;
 	border-radius: 10px;
 	scale: 1.5;
+}
+.liveLink{text-decoration-line: underline;
+
 }
 
 #dotScroll {
@@ -248,11 +255,29 @@ h1 {
 	padding-bottom: 15px;
 }
 
+p1 {
+	font-family: "helvetica-neue-lt-pro", sans-serif;
+	color: var(---white);
+	font-size: 12px;
+	padding-top: 5px;
+
+}
+
 .subDiv {
 	border-top-style: solid;
 	border-top-color: var(---white);
+	padding-bottom: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: end;
 	/* border-top-width: 4px; */
+	/* align-items: center; */
+	align-items: flex-start
+		/* border-top-width: 4px; */
 }
+
+
 
 h2 {
 	/* text-decoration-line: underline; */
@@ -310,6 +335,12 @@ p2 {
 		display: flex;
 		flex-direction: column;
 	}
+	#rightNav svg {
+		width: 15px;
+		height: auto;
+		display: block;
+		fill: rgb(255, 255, 255);
+	}
 
 	.bigleftdiv {
 		width: 100%;
@@ -333,7 +364,7 @@ p2 {
 		display: none;
 	}
 
-	.mobilenav {
+		.mobilenav {
 		background-color: black;
 		color: #ffffff;
 		padding: 10px 10px 10px 10px;
@@ -341,6 +372,8 @@ p2 {
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
+		position: sticky;
+	
 	}
 
 	#mobileDropdown {
@@ -354,6 +387,9 @@ p2 {
 		/* display: block; */
 		/* background-color: var(--matt-black);
 		   */
+	}
+	.mobileDisc{
+		display: block;
 	}
 
 	.textTitle {
@@ -390,7 +426,7 @@ p2 {
 
 	.bigrightdiv {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr ;
 	}
 }
 
