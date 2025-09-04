@@ -471,7 +471,7 @@ p4 {
   }
 
   .bigleftdiv {
-    /* display: none; */
+    height: 80vh;
     
   }
 
@@ -504,9 +504,10 @@ p4 {
   
   }
   .bigrightdiv{
-    padding: 16px 16px 0px 16px;
+    padding: 16px 16px 16px 16px;
     gap: 8px;
-    height: 80vh;
+    height: auto;
+    
   }
  
   .visualGridMobile{
