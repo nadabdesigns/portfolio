@@ -385,6 +385,7 @@ p4 {
   background: #000000;
 }
 
+
 @media screen and (max-width: 1050px) {
   body {
     display: flex;
@@ -506,8 +507,10 @@ p4 {
     padding: 16px 16px 0px 16px;
     gap: 8px;
   }
-  .aTag{
-    height: 30px;
+ 
+  .visualGridMobile{
+    display: flex;
+    flex-direction: column;
   }
 
 

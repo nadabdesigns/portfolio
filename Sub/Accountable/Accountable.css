@@ -25,10 +25,15 @@ html {
 	/* background-color: var(---black); */
 	scroll-behavior: smooth !important;
 }
+
 body {
 	margin: 0;
-	overflow-y: auto; /* ensure the body is the scroll container */
-  }
+	overflow-y: auto;
+	/* ensure the body is the scroll container */
+}
+.visualGridMobile{
+	display: none;
+}
 
 
 
@@ -76,7 +81,7 @@ p1 {
 	color: var(---white);
 	font-size: 12px;
 	padding-top: 5px;
-	
+
 }
 
 #rightNav {
@@ -96,6 +101,12 @@ p1 {
 	padding-bottom: 15px;
 	right: 30px;
 	z-index: 10;
+	filter: drop-shadow(0 0 0.1rem rgb(159, 159, 159));
+	
+}
+.disc{
+	writing-mode: vertical-rl;
+text-orientation: mixed;
 }
 
 #rightNav svg {
@@ -233,9 +244,10 @@ em {
 	  border-radius: 4%;
   } */
 
-video{
+video {
 	width: 100%;
 }
+
 .bigrightdiv {
 	display: flex;
 	flex-direction: row;
@@ -252,30 +264,34 @@ video{
 	background-color: var(---black);
 	scroll-behavior: smooth !important;
 }
-.FirstCol{
+
+.FirstCol {
 	width: 100%;
 }
-#bentoBox{
+
+#bentoBox {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
 	/* background-color: aqua; */
 
 }
-.bentoBoxSub{
+
+.bentoBoxSub {
 
 	width: 50%;
 	/* background-color: rgb(255, 0, 76); */
 	padding: none
+}
+
+video {
+	object-fit: cover;
 
 }
-video{
-	object-fit: cover;
-	
-}
-#imgBento{
+
+#imgBento {
 	height: 100%;
-    object-fit: cover;
+	object-fit: cover;
 	overflow: hidden;
 }
 
@@ -302,18 +318,16 @@ h1 {
 
 .subDiv {
 	border-top-style: solid;
-    border-top-color: var(---white);
-    padding-bottom: 15px;
-    display: flex
-;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: end;
-    /* border-top-width: 4px; */
-    /* align-items: center; */
-	align-items: flex-start
-
+	border-top-color: var(---white);
+	padding-bottom: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: end;
 	/* border-top-width: 4px; */
+	/* align-items: center; */
+	align-items: flex-start
+		/* border-top-width: 4px; */
 }
 
 h2 {
@@ -333,10 +347,11 @@ h3 {
 	color: white;
 	padding-bottom: 10px;
 }
-.liveLink{
+
+.liveLink {
 	text-decoration: underline;
 	font-style: italic;
-   
+
 	/* text-align: end; */
 }
 
@@ -373,6 +388,10 @@ p2 {
 	padding: 16px;
 }
 
+.visualGridMobile {
+	display: none;
+}
+
 @media screen and (max-width: 1050px) {
 	body {
 		display: flex;
@@ -393,12 +412,27 @@ p2 {
 		/* padding-bottom: 30px; */
 		/* padding-top: 30px; */
 	}
+	#rightNav svg {
+		width: 15px;
+		height: auto;
+		display: block;
+		fill: rgb(255, 255, 255);
+	}
+	
+	#rightNav:hover svg {
+		fill: white;
+	}
 }
 
 /* less than 600px */
 @media screen and (max-width: 600px) {
 	.desktopnav {
 		display: none;
+	}
+
+	.visualGridMobile {
+		display: flex;
+		flex-direction: column;
 	}
 
 	.mobilenav {
@@ -458,8 +492,10 @@ p2 {
 
 	.bigrightdiv {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
 	}
+	
+
 }
 
 /* SCREEN IS SMALLER THAN 530 PX */
