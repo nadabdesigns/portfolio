@@ -506,6 +506,7 @@ p4 {
   .bigrightdiv{
     padding: 16px 16px 0px 16px;
     gap: 8px;
+    height: 80vh;
   }
  
   .visualGridMobile{
