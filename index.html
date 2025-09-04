@@ -14,6 +14,8 @@
 
 </head>
 
+
+
 <body>
 
 	<nav class="desktopnav">
@@ -172,11 +174,12 @@
 
 
 				</div>
-			
+
 			</div>
 
-			<div class="subDiv">
+			<div class="subDiv" id="visualDiaryGrid">
 				<h1> Visual Diary </h1>
+
 
 
 				<div class="visualGrid">
@@ -225,6 +228,8 @@
 
 					</div>
 
+
+
 				</div>
 			</div>
 			<div id="BioDiv">
@@ -245,11 +250,17 @@
 					</div>
 				</div>
 			</div>
+			
+				
+			  
 
 
 
 
 		</div>
+		
+		  
+		
 
 		<div class="bigrightdiv">
 
@@ -327,9 +338,63 @@
 				<a href="./Sub/Links/Links.html"><img src="./Home_Page_Media/Links.png"></a>
 
 			</div>
+			<script>
+				document.addEventListener("DOMContentLoaded", () => {
+				  // Use your mobile breakpoint; your CSS uses 600px for "true" mobile
+				  const mq = window.matchMedia("(max-width: 1050px)");
+			  
+				  let intervalId = null;
+				  let images = [];
+				  let idx = 0;
+			  
+				  function startSlideshow() {
+					// Prevent duplicates if called again
+					if (intervalId) return;
+			  
+					images = Array.from(document.querySelectorAll(".thumbnaile"));
+					if (images.length === 0) return;
+			  
+					// Set initial state
+					images.forEach(img => img.style.opacity = 0);
+					idx = 0;
+					images[idx].style.opacity = 1;
+			  
+					intervalId = setInterval(() => {
+					  images[idx].style.opacity = 0;
+					  idx = (idx + 1) % images.length;
+					  images[idx].style.opacity = .8;
+					}, 3000);
+				  }
+			  
+				  function stopSlideshow() {
+					if (intervalId) {
+					  clearInterval(intervalId);
+					  intervalId = null;
+					}
+					// Reset so desktop hover works as you designed
+					if (images && images.length) {
+					  images.forEach(img => img.style.opacity = "");
+					}
+				  }
+			  
+				  function applyMode(e) {
+					if (mq.matches) {
+					  startSlideshow();   // mobile
+					} else {
+					  stopSlideshow();    // desktop/tablet
+					}
+				  }
+			  
+				  // Initial apply + react to viewport changes
+				  applyMode();
+				  mq.addEventListener("change", applyMode);
+				});
+			  </script>
+			  
 
 
 		</div>
+
 </body>
 
 <!-- <script>const myDot = document.getElementsByClassName("dot")[0];

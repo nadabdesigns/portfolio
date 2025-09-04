@@ -476,6 +476,17 @@ p4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  .thumbnaile {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    position: absolute;
+  }
+  .visualGrid { position: relative; }
+
+
+
+
+
   
   
 
