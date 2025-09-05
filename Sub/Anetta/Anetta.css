@@ -458,10 +458,12 @@ p2 {
 
 	.bigrightdiv {
 		display: flex;
-		grid-template-columns: 1fr;
+		flex-direction: column;
+	
 	}
 	.mobilenav{
 		display: block;
+		
 	}
 	.visualGridMobile{
 		display: block;

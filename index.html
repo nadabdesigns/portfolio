@@ -26,83 +26,11 @@
 	<nav class="mobilenav">
 		<div id="navShift">
 			<!-- why did it crash -->
-			<p>⇅ All Projects </p>
+			<a href="./index.html"><p>⇅ All Projects </p></a>
 			<p> Nadia Batchelor </p>
 		</div>
-		<div id="mobileDropdown" class="style1">
-			<h3> Contact </h3>
-			<h1> Works </h1>
 
-			<div class="visualGrid">
-				<div class="col1">
-					<div>
-						<a href="../portfolio/Sub/Typography/Typography.html">
-							<h2>Typography</h2>
-						</a>
-
-					</div>
-					<div>
-						<h2>Accountable</h2>
-					</div>
-					<div>
-						<h2>Dyslexia Simulation</h2>
-					</div>
-					<div>
-						<h2>Opal</h2>
-					</div>
-				</div>
-				<div class="col1">
-					<div>
-						<h2>Spot</h2>
-					</div>
-
-					<div>
-						<a href="../portfolio//Sub/Burn_Out/BurnOut.html">
-							<h2>Burn Out</h2>
-						</a>
-
-					</div>
-				</div>
-
-				<h1> Visual Diary </h1>
-
-
-				<h2>cultural nomad</h2>
-				<h2>scans</h2>
-
-
-				<h2>The Self Sufficient Selfie</h2>
-
-				<h2>Photography</h2>
-				<script>
-					document.addEventListener("DOMContentLoaded", () => {
-						const button = document.querySelector(".h2");
-						const highlight = document.getElementById("h2Change");
-						const hamburger = document.getElementById("hamburger");
-						const mobileDropdown = document.getElementById("mobileDropdown");
-
-						if (button) {
-							button.addEventListener('mouseover', () => {
-								if (mobileDropdown.classList.contains("style2")) {
-									highlight.style.color = "red"; // example action
-								}
-							});
-						}
-
-						hamburger.addEventListener("click", () => {
-							if (!mobileDropdown.classList.contains("style2")) {
-								mobileDropdown.classList.remove("style1");
-								mobileDropdown.classList.add("style2");
-							} else {
-								mobileDropdown.classList.remove("style2");
-								mobileDropdown.classList.add("style1");
-							}
-						});
-					});
-				</script>
-
-
-			</div>
+			
 	</nav>
 
 
