@@ -31,6 +31,13 @@ body {
 	overflow-y: auto;
 	/* ensure the body is the scroll container */
 }
+.mobilenav{
+	display: none;
+}
+.visualGridMobile{
+	display: none;
+}
+
 
 
 
@@ -262,11 +269,13 @@ em {
 	width: 50%;
 	max-height: 100%;
 	object-fit: cover;
+	overflow: clip;
 }
 
 #section-one {
 	display: flex;
 	flex-direction: row;
+	gap: 10px;
 
 }
 #imgBig{
@@ -274,6 +283,8 @@ em {
 }
 video{
 	width: 50%;
+	object-fit: cover;
+	overflow: clip;
 }
 
 /* see if overflow is working */
@@ -403,13 +414,14 @@ p2 {
 		position: absolute;
 		z-index: 10;
 		height: calc(100vh - 30px);
-		margin: 30px 0px 0px 0px;
+		margin: 10px 0px 0px 0px;
 		margin-left: 0px;
 		margin-right: 0px;
 		padding: 10px;
-		/* display: block; */
-		/* background-color: var(--matt-black);
-		   */
+		height: 100%;
+		width: 100%;
+		top: 30px;
+		right:0px
 	}
 
 	.textTitle {
@@ -446,7 +458,13 @@ p2 {
 
 	.bigrightdiv {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
+	}
+	.mobilenav{
+		display: block;
+	}
+	.visualGridMobile{
+		display: block;
 	}
 
 

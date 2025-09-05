@@ -25,10 +25,21 @@ html {
 	/* background-color: var(---black); */
 	scroll-behavior: smooth !important;
 }
+
 body {
 	margin: 0;
-	overflow-y: auto; /* ensure the body is the scroll container */
-  }
+	overflow-y: auto;
+	/* ensure the body is the scroll container */
+}
+
+.cols {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+.visualGridMobile{
+	display: none;
+}
 
 
 
@@ -76,7 +87,7 @@ p1 {
 	color: var(---white);
 	font-size: 12px;
 	padding-top: 5px;
-	
+
 }
 
 #rightNav {
@@ -234,7 +245,7 @@ em {
   } */
 .bigrightdiv {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	gap: 10px;
 
 	padding: 0px 10px 0px 10px;
@@ -248,7 +259,8 @@ em {
 	background-color: var(---black);
 	scroll-behavior: smooth !important;
 }
-.FirstCol{
+
+.FirstCol {
 	width: 50%;
 }
 
@@ -273,18 +285,16 @@ h1 {
 
 .subDiv {
 	border-top-style: solid;
-    border-top-color: var(---white);
-    padding-bottom: 15px;
-    display: flex
-;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: end;
-    /* border-top-width: 4px; */
-    /* align-items: center; */
-	align-items: flex-start
-
+	border-top-color: var(---white);
+	padding-bottom: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: end;
 	/* border-top-width: 4px; */
+	/* align-items: center; */
+	align-items: flex-start
+		/* border-top-width: 4px; */
 }
 
 h2 {
@@ -304,10 +314,11 @@ h3 {
 	color: white;
 	padding-bottom: 10px;
 }
-.liveLink{
+
+.liveLink {
 	text-decoration: underline;
 	font-style: italic;
-   
+
 	/* text-align: end; */
 }
 
@@ -343,6 +354,7 @@ p2 {
 	background-color: var(---black);
 	padding: 16px;
 }
+
 .PaddingImg {
 	padding-bottom: 7px;
 }
@@ -431,8 +443,11 @@ p2 {
 	}
 
 	.bigrightdiv {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
+		display: flex;
+		flex-direction: column;
+	}
+	.visualGridMobile{
+		display: block;
 	}
 }
 
