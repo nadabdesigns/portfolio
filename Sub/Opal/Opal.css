@@ -31,6 +31,9 @@ body {
 	overflow-y: auto;
 	/* ensure the body is the scroll container */
 }
+.visualGridMobile{
+	display: none;
+}
 
 
 
@@ -406,6 +409,8 @@ p2 {
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
+		position: sticky;
+		top: 0px;
 	}
 
 	#mobileDropdown {
@@ -454,8 +459,11 @@ p2 {
 	}
 
 	.bigrightdiv {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
+		display: flex;
+		flex-direction: column;
+	}
+	.visualGridMobile{
+		display: block;
 	}
 
 
