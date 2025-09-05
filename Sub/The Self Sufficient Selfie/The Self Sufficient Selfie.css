@@ -34,6 +34,7 @@ body {
 
 .visualGridMobile {
 	display: none;
+	padding-bottom: 10px;
 }
 #lastPic{
 	padding-bottom: 8px;
