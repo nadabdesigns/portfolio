@@ -457,7 +457,7 @@ p2 {
 	}
 
 	.bigrightdiv {
-		display: grid;
+		display: flex;
 		grid-template-columns: 1fr;
 	}
 	.mobilenav{

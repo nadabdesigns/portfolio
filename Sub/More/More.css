@@ -29,6 +29,12 @@ body {
 	margin: 0;
 	overflow-y: auto; /* ensure the body is the scroll container */
   }
+  .cols{
+
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+  }
 
 
 
@@ -234,7 +240,7 @@ em {
   } */
 .bigrightdiv {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	gap: 8px;
 
 	padding: 0px 10px 0px 10px;
@@ -256,6 +262,7 @@ em {
 	width: 100%;
 	max-height: 100%;
 	object-fit: cover;
+	padding-bottom: 8px;
 }
 
 /* see if overflow is working */
@@ -385,7 +392,7 @@ p2 {
 	#mobileDropdown {
 		position: absolute;
 		z-index: 10;
-		height: calc(100vh - 30px);
+		height: calc(100vh);
 		margin: 30px 0px 0px 0px;
 		margin-left: 0px;
 		margin-right: 0px;
@@ -428,8 +435,8 @@ p2 {
 	}
 
 	.bigrightdiv {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
+		display: flex;
+		flex-direction: column;
 	}
 }
 
