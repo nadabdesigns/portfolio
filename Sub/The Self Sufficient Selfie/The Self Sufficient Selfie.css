@@ -402,9 +402,13 @@ p2 {
 		color: #ffffff;
 		padding: 10px 10px 10px 10px;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
+		position: sticky;
+		top: 0px;
+		
+		
 	}
 
 	#mobileDropdown {
@@ -447,10 +451,7 @@ p2 {
 		width: 30px;
 	}
 
-	.mobilenav {
-		display: flex;
-		flex-direction: column;
-	}
+	
 
 	.bigrightdiv {
 		display: grid;

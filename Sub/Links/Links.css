@@ -31,7 +31,8 @@ body {
 	overflow-y: auto;
 	/* ensure the body is the scroll container */
 }
-.visualGridMobile{
+
+.visualGridMobile {
 	display: none;
 }
 
@@ -276,7 +277,7 @@ video {
 
 .subImg {
 	width: 50%;
-	
+
 	object-fit: cover;
 	overflow: clip;
 }
@@ -433,6 +434,10 @@ p2 {
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
+		display: flex;
+		flex-direction: column;
+		position: sticky;
+		top: 0px;
 	}
 
 	#mobileDropdown {
@@ -482,9 +487,10 @@ p2 {
 
 	.bigrightdiv {
 		display: grid;
-		grid-template-columns: 1fr ;
+		grid-template-columns: 1fr;
 	}
-	.visualGridMobile{
+
+	.visualGridMobile {
 		display: block;
 	}
 }

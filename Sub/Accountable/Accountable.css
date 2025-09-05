@@ -498,6 +498,11 @@ p2 {
 	.mobilenav {
 		display: flex;
 		flex-direction: column;
+		display: flex
+		;
+				flex-direction: column;
+				position: sticky;
+				top: 0px;
 	}
 
 	.bigrightdiv {

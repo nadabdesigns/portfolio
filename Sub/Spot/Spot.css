@@ -398,6 +398,9 @@ p2 {
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
+		position: sticky;
+		top: 0px;
+	
 	}
 
 	#mobileDropdown {
@@ -443,10 +446,7 @@ p2 {
 		width: 30px;
 	}
 
-	.mobilenav {
-		display: flex;
-		flex-direction: column;
-	}
+	
 
 	.bigrightdiv {
 		display: grid;

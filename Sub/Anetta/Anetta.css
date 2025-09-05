@@ -31,10 +31,12 @@ body {
 	overflow-y: auto;
 	/* ensure the body is the scroll container */
 }
-.mobilenav{
+
+.mobilenav {
 	display: none;
 }
-.visualGridMobile{
+
+.visualGridMobile {
 	display: none;
 }
 
@@ -278,10 +280,12 @@ em {
 	gap: 10px;
 
 }
-#imgBig{
+
+#imgBig {
 	width: 100%;
 }
-video{
+
+video {
 	width: 50%;
 	object-fit: cover;
 	overflow: clip;
@@ -421,7 +425,7 @@ p2 {
 		height: 100%;
 		width: 100%;
 		top: 30px;
-		right:0px
+		right: 0px
 	}
 
 	.textTitle {
@@ -459,13 +463,19 @@ p2 {
 	.bigrightdiv {
 		display: flex;
 		flex-direction: column;
-	
+
 	}
-	.mobilenav{
+
+	.mobilenav {
 		display: block;
-		
+		display: flex;
+		flex-direction: column;
+		position: sticky;
+		top: 0px;
+
 	}
-	.visualGridMobile{
+
+	.visualGridMobile {
 		display: block;
 	}
 

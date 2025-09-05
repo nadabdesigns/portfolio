@@ -25,10 +25,10 @@ html {
 	/* background-color: var(---black); */
 	scroll-behavior: smooth !important;
 }
-.visualGridMobile{
 
-}
-.visualGridMobile{
+.visualGridMobile {}
+
+.visualGridMobile {
 	display: none;
 }
 
@@ -91,15 +91,17 @@ html {
 	right: 30px;
 	z-index: 10;
 }
+
 #rightNav svg {
 	width: 15px;
 	height: auto;
 	display: block;
 	fill: rgb(85, 85, 85);
 }
+
 #rightNav:hover svg {
 	fill: white;
-  }
+}
 
 
 .dot {
@@ -295,11 +297,12 @@ p {
 	font-style: normal;
 	font-size: 18px;
 }
+
 p1 {
-    font-family: "helvetica-neue-lt-pro", sans-serif;
-    color: var(---white);
-    font-size: 12px;
-    padding-top: 5px;
+	font-family: "helvetica-neue-lt-pro", sans-serif;
+	color: var(---white);
+	font-size: 12px;
+	padding-top: 5px;
 }
 
 p2 {
@@ -354,7 +357,8 @@ p2 {
 	.desktopnav {
 		display: none;
 	}
-	.visualGridMobile{
+
+	.visualGridMobile {
 		display: block;
 	}
 
@@ -366,7 +370,9 @@ p2 {
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
-		position:sticky
+		position: sticky;
+		position: sticky;
+		top: 0px;
 	}
 
 	#mobileDropdown {
