@@ -25,10 +25,19 @@ html {
 	/* background-color: var(---black); */
 	scroll-behavior: smooth !important;
 }
+
 body {
 	margin: 0;
-	overflow-y: auto; /* ensure the body is the scroll container */
-  }
+	overflow-y: auto;
+	/* ensure the body is the scroll container */
+}
+
+.visualGridMobile {
+	display: none;
+}
+#lastPic{
+	padding-bottom: 8px;
+}
 
 
 
@@ -76,7 +85,7 @@ p1 {
 	color: var(---white);
 	font-size: 12px;
 	padding-top: 5px;
-	
+
 }
 
 #rightNav {
@@ -248,12 +257,15 @@ em {
 	background-color: var(---black);
 	scroll-behavior: smooth !important;
 }
-.FullBleedDiv{
+
+.FullBleedDiv {
 	padding-bottom: 8px;
 }
-.FirstCol{
+
+.FirstCol {
 	width: 50%;
 }
+
 .twoCol {
 	display: flex;
 	flex-direction: row;
@@ -282,18 +294,16 @@ h1 {
 
 .subDiv {
 	border-top-style: solid;
-    border-top-color: var(---white);
-    padding-bottom: 15px;
-    display: flex
-;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: end;
-    /* border-top-width: 4px; */
-    /* align-items: center; */
-	align-items: flex-start
-
+	border-top-color: var(---white);
+	padding-bottom: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: end;
 	/* border-top-width: 4px; */
+	/* align-items: center; */
+	align-items: flex-start
+		/* border-top-width: 4px; */
 }
 
 h2 {
@@ -313,10 +323,11 @@ h3 {
 	color: white;
 	padding-bottom: 10px;
 }
-.liveLink{
+
+.liveLink {
 	text-decoration: underline;
 	font-style: italic;
-   
+
 	/* text-align: end; */
 }
 
@@ -352,6 +363,7 @@ p2 {
 	background-color: var(---black);
 	padding: 16px;
 }
+
 .PaddingImg {
 	padding-bottom: 7px;
 }
@@ -441,7 +453,13 @@ p2 {
 
 	.bigrightdiv {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
+	}
+
+	.visualGridMobile {
+		width: 100%;
+		display: block;
+
 	}
 }
 
