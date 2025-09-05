@@ -252,7 +252,7 @@ h1 {
 	font-style: normal;
 	font-size: 30px;
 	text-transform: uppercase;
-	padding-bottom: 15px;
+	/* padding-bottom: 15px; */
 	text-align: left;
 }
 
