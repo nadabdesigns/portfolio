@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://typography-interaction-2425.github.io/assets/reset.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../AboutMe/AboutMe.css">
+	<link rel="stylesheet" href="https://use.typekit.net/dnc4aus.css">
+	<script src="../script.js"></script>
+
+</head>
+
+<body>
+
+	<nav class="desktopnav">
+		<a href="../../index.html">
+			<p id="allPro">⇅ All Projects</p>
+		</a>
+	</nav>
+	<nav class="mobilenav">
+		<div id="navShift">
+			<a href="../../index.html">
+				<p>⇅ All Projects </p>
+			</a><img src="../../Home_Page_Media/Hamburger.svg" id="hamburger">
+		</div>
+		<div id="mobileDropdown" class="style1">
+
+			<h1> Contact </h1>
+
+			<div class="visualGrid">
+				<div class="col1">
+					<div>
+						<a href="https://www.instagram.com/nadabdesigns/">
+							<h2>instagram</h2>
+						</a>
+					</div>
+					<div>
+						<a href="https://www.linkedin.com/in/nadiabatchelor/">
+							<h2>LinkedIn</h2>
+						</a>
+					</div>
+					<div>
+						<a href="https://dribbble.com/Nadabdesigns">
+							<h2>Dribbble</h2>
+						</a>
+					</div>
+					<div>
+						<a href="https://drive.google.com/file/d/1ju9QsyZoSVOtA7doyWzxOP6I6dju2Ri-/view">
+							<h2>CV</h2>
+						</a>
+					</div>
+
+					<div>
+						<a href="mailto:name@example.com">
+							<h2>nadabdesigns@gmail.com</h2>
+						</a>
+					</div>
+
+					<script>
+						document.addEventListener("DOMContentLoaded", () => {
+							const button = document.querySelector(".h2");
+							const highlight = document.getElementById("h2Change");
+							const hamburger = document.getElementById("hamburger");
+							const mobileDropdown = document.getElementById("mobileDropdown");
+
+							if (button) {
+								button.addEventListener('mouseover', () => {
+									if (mobileDropdown.classList.contains("style2")) {
+										highlight.style.color = "red"; // example action
+									}
+								});
+							}
+
+							hamburger.addEventListener("click", () => {
+								if (!mobileDropdown.classList.contains("style2")) {
+									mobileDropdown.classList.remove("style1");
+									mobileDropdown.classList.add("style2");
+								} else {
+									mobileDropdown.classList.remove("style2");
+									mobileDropdown.classList.add("style1");
+								}
+							});
+						});
+					</script>
+
+
+				</div>
+	</nav>
+
+
+
+	<div class="bigleftdiv">
+
+		<div class="subDiv">
+
+			<h1> About Me</h1>
+			<div>
+				<p1> BIO</p1>
+			</div>
+
+		</div>
+
+		<div class="visualGrid">
+			<div class="col1">
+				<p class="p2">Nadia Batchelor <br><br>
+
+					Brooklyn-based designer shaping experiences across retail, social impact, culture, healthcare, and
+					technology.
+					<br><br>
+
+					Recent Parsons MPS Communication Design graduate under AIGA Gold Medalist Lucille Tenazas. Most
+					recently with INVNT’s Global Marketing team. My Design practice lives at the intersection of empathy
+					and impact, expressed through a multidisciplinary approach spanning branding, experiential, and
+					digital design.
+
+
+
+
+				</p>
+				<br>
+				<a href="mailto:nadabdesigns@gmail.com" class="liveLink">
+					nadabdesigns@gmail.com ↵
+				</a>
+			</div>
+
+
+
+			<!-- <h2>Accountable <br>Dyslexia Simulation <br>Opal</h2>
+				<h2>Spot <br>Typography <br>Burn Out</h2> -->
+
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+	</div>
+
+	<div class="bigrightdiv">
+
+		<!-- add in an image -->
+		<!-- ./ is a short cut for files -->
+		<!-- command click links to see if they lead to the right thing -->
+
+
+
+
+
+
+		<div class="containerImage section" id="section-two">
+			<!-- <div class="textTitle" id="accountable"> Accountable <p>UX/UI</p>
+			</div> -->
+			<div class="boxOne">
+				<div>
+				  <h4>Experience</h4>
+				  <p class="lineHeight">
+					<a href="https://invnt.com/">INVNT <em>25</em></a><br>
+					<a href="https://eventure.nyc/">Eventure Nyc <em>24</em></a><br>
+					<a href="https://sitebolts.com/">SiteBolts <em>25</em></a><br>
+					<a href="https://www.mccabesprinting.com/">McCabe’s Printing Group <em>23</em></a>
+				  </p>
+			  
+				  <h4>/ Brands</h4>
+				  <p class="lineHeight">
+					Samsung<br>
+					lululemon<br>
+					Hilton<br>
+					INOVA
+				  </p>
+				</div>
+			  
+				<div>
+				  <h4>Awards / Press <br> / Competitions / Presentations</h4>
+				  <p class="lineHeight">
+					Designpreneurs Hackathon <em>25</em><br>
+					AIGA Design Conference 2024<br>
+					New York Art Book Fair <em>25</em><br>
+					CIC Japan Desk <em>25</em><br>
+					<a href="https://event.newschool.edu/parsonsfestival">Parsons Festival 2025 <em>23</em></a><br>
+					<a href="https://dc.aiga.org/featured-member-nadia-batchelor/">AIGA DC Feature <em>23</em></a><br>
+					AIGA DC CreateAthon <em>23</em>
+				  </p>
+			  
+				  <h4>Contact</h4>
+				  <p class="lineHeight">
+					<a href="https://www.instagram.com/nadabdesigns/">Instagram</a><br>
+					<a href="https://dribbble.com/Nadabdesigns">Dribbble</a><br>
+					<a href="https://drive.google.com/file/d/1ju9QsyZoSVOtA7doyWzxOP6I6dju2Ri-/view">CV</a>
+				  </p>
+				</div>
+			  
+				<div>
+				  <h4>Education</h4>
+				  <p class="lineHeight">
+					Parsons School of Design<br>
+					George Washington University<br>
+					George Mason University
+				  </p>
+				</div>
+			  </div>
+
+
+
+
+
+
+
+
+			
+
+
+
+		</div>
+
+</body>
+
+<!-- <script>const myDot = document.getElementsByClassName("dot")[0];
+myDot.style.backgroundColor = "yellow";</script> -->
+
+</html>

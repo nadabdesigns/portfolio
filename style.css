@@ -177,9 +177,32 @@ html {
   overflow: hidden;
   overflow-y: scroll;
 }
+.bigleftdiv :nth-child(1){
+  order: 2;
+
+}
+.bigleftdiv :nth-child(2){
+  order: 3;
+
+}
+.bigleftdiv :nth-child(3){
+  order: 1;
+
+}
 
 #bioDiv {
   height: 40px;
+}
+#BioDiv:hover {
+  animation: shake 0.4s ease-in-out infinite;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-1.5px); }
+  50% { transform: translateX(0); }
+  75% { transform: translateX(-1.5px); }
+  100% { transform: translateX(0); }
 }
 
 em {
@@ -363,6 +386,8 @@ p4 {
 
 #BioParagraph {
   padding-bottom: 10px;
+  font-size: 16;
+  
 }
 
 .blackDiv {
@@ -534,11 +559,11 @@ p4 {
     flex-direction: column;
   }
   .bigleftdiv :nth-child(1){
-    order: 2;
+    order: 3;
 
   }
   .bigleftdiv :nth-child(2){
-    order: 3;
+    order: 2;
 
   }
   .bigleftdiv :nth-child(3){
