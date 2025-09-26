@@ -396,6 +396,25 @@ p2 {
 	background-color: var(---black);
 	padding: 16px;
 }
+/* width */
+::-webkit-scrollbar {
+	width: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #000000;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #000;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #000000;
+  }
 
 @media screen and (max-width: 1050px) {
 	body {

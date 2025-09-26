@@ -393,6 +393,25 @@ p2 {
 .visualGridMobile {
 	display: none;
 }
+/* width */
+::-webkit-scrollbar {
+	width: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #000000;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #000;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #000000;
+  }
 
 @media screen and (max-width: 1050px) {
 	body {
@@ -431,6 +450,7 @@ p2 {
 	#rightNav:hover svg {
 		fill: white;
 	}
+
 }
 
 /* less than 600px */
