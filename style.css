@@ -195,15 +195,21 @@ html {
 }
 #BioDiv:hover {
   animation: shake 0.4s ease-in-out infinite;
+  background: black;
+  border-radius: 1px;
+ 
+
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 0 3px 2px rgba(255, 255, 255, 0.7);
 }
 
-@keyframes shake {
+/* @keyframes shake {
   0% { transform: translateX(0); }
   25% { transform: translateX(-1.5px); }
   50% { transform: translateX(0); }
   75% { transform: translateX(-1.5px); }
   100% { transform: translateX(0); }
-}
+} */
 
 em {
   color: var(---white);
