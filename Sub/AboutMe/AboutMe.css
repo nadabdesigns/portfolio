@@ -166,7 +166,7 @@ html {
 /* giv big left div space */
 .bigleftdiv {
 
-	height: 97vh;
+	height: 100vh;
 	width: 30%;
 	float: left;
 	overflow: scroll;
@@ -232,12 +232,12 @@ em {
 
 	padding: 0px 10px 0px 10px;
 
-	height: 97vh;
+	height: 100vh;
 	/* padding: 10px; */
 
-	overflow: scroll;
+	/* overflow: scroll; */
 	/* border-radius: 4%; */
-	color: brown;
+	
 	background-color: var(---black);
 	scroll-behavior: smooth !important;
 }
