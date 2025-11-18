@@ -327,6 +327,7 @@ h2 {
   text-transform: uppercase;
 
   padding-top: 4px;
+  text-align: end;
 }
 
 .border {
@@ -365,7 +366,7 @@ p4 {
   font-style: normal;
   font-size: 10px;
   text-transform: uppercase;
-  text-align: end;
+  text-align: left;
 }
 
 .aTag {
@@ -580,6 +581,12 @@ p4 {
   display: flex
   ;
           flex-direction: row-reverse;
+ }
+ p4{
+  text-align: end
+ }
+ h{
+  text-align: left
  }
  
 

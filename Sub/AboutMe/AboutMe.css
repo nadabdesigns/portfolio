@@ -298,6 +298,8 @@ h2 {
 	text-transform: uppercase;
 	border-bottom: 1px solid white;
 	padding-top: 4px;
+	
+	
 }
 
 h3 {
@@ -433,6 +435,7 @@ p2 {
 		/* padding-bottom: 30px; */
 		/* padding-top: 30px; */
 	}
+
 }
 
 /* less than 600px */
